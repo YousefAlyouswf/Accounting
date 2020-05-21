@@ -17,6 +17,8 @@ namespace Accounting
 {
     public partial class manager : Form
     {
+        // Golbal Variable
+        #region
         bool panelHideOrShow = true;
         EmployeeClass emClass = new EmployeeClass();
         Category category = new Category();
@@ -27,23 +29,31 @@ namespace Accounting
         ReceiptClass receipt = new ReceiptClass();
         string itemCatgory;
         string itemUnit;
+        #endregion
         public manager()
         {
+            // اظهار واخفاء الصفحات في البدايه
+            #region
             InitializeComponent();
-            panelSpare.Hide();
             panelEmployee.Hide();
-            panelHome.Show();
             addUserBtn.Hide();
-            panelBill.Hide();
+            panelItem.Hide();
+            panelInvoice.Hide();
+            panelReceipt.Hide();
+            panelSupplier.Hide();
+            panelCustomer.Hide();
+            panelUnit.Hide();
+            panel_catagory.Hide();
+            #endregion
 
-
-
+            // تواريخ الشراء والبيع فورمات
+            #region
             dateTimeInvoice.Format = DateTimePickerFormat.Custom;
             dateTimeInvoice.CustomFormat = Application.CurrentCulture.DateTimeFormat.ShortDatePattern;
 
             dateTimeReceipt.Format = DateTimePickerFormat.Custom;
             dateTimeReceipt.CustomFormat = Application.CurrentCulture.DateTimeFormat.ShortDatePattern;
-
+            #endregion
         }
         //أساسيات صفحة المدير
         #region
@@ -74,38 +84,35 @@ namespace Accounting
         {
             addUserBtn.Hide();
             pageLable.Text = "التقرير";
-            panelSpare.Hide();
             panelEmployee.Hide();
-            panelHome.Show();
-            panelBill.Hide();
 
         }
 
-        //اظهار صفحة فاتورة البيع
-        private void billBtn_Click(object sender, EventArgs e)
-        {
-            addUserBtn.Hide();
-            pageLable.Text = "الفاتورة";
-            panelSpare.Hide();
-            panelEmployee.Hide();
-            panelHome.Hide();
-            panelBill.Show();
 
-        }
         //---------------------------------- صفحة الموظفين
         #region
         //اظهار صفحة الموظفين
-        private void employee_Click(object sender, EventArgs e)
+        private void buttonEmployee_Click(object sender, EventArgs e)
         {
+            pageLable.Text = "الموظفين";
+            panelEmployee.Show();
+            addUserBtn.Show();
+            panelItem.Hide();
+            panelInvoice.Hide();
+            panelReceipt.Hide();
+            panelSupplier.Hide();
+            panelCustomer.Hide();
+            panelUnit.Hide();
+            panel_catagory.Hide();
+
             addUserBtn.Show();
             pageLable.Text = "الموظفين";
-            panelSpare.Hide();
+
+            //اظهار واخفاء الصفحات
             panelEmployee.Show();
-            panelBill.Hide();
-            panelHome.Hide();
+
             emClass.getAllEmployee("http://gewscrap.com/allfolder/spare/employee.php");
             empDataGrid.DataSource = emClass.dataTable();
-
         }
         // اظافة موظف جديد
         private void addUserBtn_Click(object sender, EventArgs e)
@@ -123,8 +130,25 @@ namespace Accounting
         }
 
         #endregion
-        //---------------------------------- صفحة أقسام وحدات البضاعه
+        //---------------------------------- صفحة أقسام وحدات 
         #region
+        //اظهار صفحة الاقسام
+        private void buttonCategory_Click(object sender, EventArgs e)
+        {
+            pageLable.Text = "أقسام البضاعه";
+            panelEmployee.Hide();
+            addUserBtn.Hide();
+            panelItem.Hide();
+            panelInvoice.Hide();
+            panelReceipt.Hide();
+            panelSupplier.Hide();
+            panelCustomer.Hide();
+            panelUnit.Hide();
+            panel_catagory.Show();
+
+            category.getAllCategroies("http://gewscrap.com/allfolder/spare/addCatgory.php?auth=true");
+            categoryGridView.DataSource = category.dataTable();
+        }
         //اظافة قسم جديد
         async private void addCatgreoryBtn_Click(object sender, EventArgs e)
         {
@@ -132,11 +156,7 @@ namespace Accounting
 
         }
         // اظهار جميع الاقسام
-        private void category_btn_Click(object sender, EventArgs e)
-        {
-            category.getAllCategroies("http://gewscrap.com/allfolder/spare/addCatgory.php?auth=true");
-            categoryGridView.DataSource = category.dataTable();
-        }
+
         //---------------------------------- صفحة الوحدات 
 
         //اظهار جميع الوحدات
@@ -144,6 +164,16 @@ namespace Accounting
         {
             unit.getAllUnit("http://gewscrap.com/allfolder/spare/unit.php?auth=true");
             dataGridView1Unit.DataSource = unit.dataTable();
+            pageLable.Text = "الوحدات";
+            panelEmployee.Hide();
+            addUserBtn.Hide();
+            panelItem.Hide();
+            panelInvoice.Hide();
+            panelReceipt.Hide();
+            panelSupplier.Hide();
+            panelCustomer.Hide();
+            panelUnit.Show();
+            panel_catagory.Hide();
         }
         //اظافة وحده جديده
         async private void buttonAddUnit_Click_1(object sender, EventArgs e)
@@ -155,16 +185,24 @@ namespace Accounting
         //---------------------------------- صفحة البضاعه 
         #region
         //اظهار صفحة البضاعه
-        private void itemButtonClick(object sender, EventArgs e)
+        private void buttonItem_Click(object sender, EventArgs e)
         {
+            pageLable.Text = "بضاعه";
+            panelEmployee.Hide();
+            addUserBtn.Hide();
+            panelItem.Show();
+            panelInvoice.Hide();
+            panelReceipt.Hide();
+            panelSupplier.Hide();
+            panelCustomer.Hide();
+            panelUnit.Hide();
+            panel_catagory.Hide();
+
             comboBoxItemcategory.Items.Clear();
             comboBoxItemUnit.Items.Clear();
             addUserBtn.Hide();
             pageLable.Text = "البضاعة";
-            panelSpare.Show();
             panelEmployee.Hide();
-            panelHome.Hide();
-            panelBill.Hide();
             category.getCategoryForItem();
             string[] listCategory = category.WildcardFiles();
 
@@ -240,13 +278,40 @@ namespace Accounting
         #endregion
         //---------------------------------- صفحة الموزعين , العملاء 
         #region
+        //اظهار صفحة الموزعين
+        private void buttonSupplier_Click(object sender, EventArgs e)
+        {
+            pageLable.Text = "الموزعين";
+            panelEmployee.Hide();
+            addUserBtn.Hide();
+            panelItem.Hide();
+            panelInvoice.Hide();
+            panelReceipt.Hide();
+            panelSupplier.Show();
+            panelCustomer.Hide();
+            panelUnit.Hide();
+            panel_catagory.Hide();
+        }
         async private void buttonAddSuplier_Click(object sender, EventArgs e)
         {
             await supplier.addSupplyAsync(textBoxSuplier_Company.Text, textBoxSuplier_person.Text, textBoxSuplier_phone.Text,
                   textBoxSuplier_mobile.Text, textBoxSuplier_Fax.Text, textBoxSuplier_Address.Text, textBoxSuplier_City.Text,
                   textBoxSuplier_Email.Text, textBoxSuplier_Web.Text);
         }
-
+        //اظهار صفحة العملاء
+        private void buttonCustomer_Click(object sender, EventArgs e)
+        {
+            pageLable.Text = "العملاء";
+            panelEmployee.Hide();
+            addUserBtn.Hide();
+            panelItem.Hide();
+            panelInvoice.Hide();
+            panelReceipt.Hide();
+            panelSupplier.Hide();
+            panelCustomer.Show();
+            panelUnit.Hide();
+            panel_catagory.Hide();
+        }
         async private void buttonAddCustomer_Click(object sender, EventArgs e)
         {
             await customer.addCustomerAsync(
@@ -257,10 +322,24 @@ namespace Accounting
         }
 
         #endregion
-
-        //---------------------------------- صفحة فاتورة شراء 
+        //---------------------------------- صفحة فاتورة شراء والبيع
+        #region
         string suplierFromInvoice;
         string customerFromReceipt;
+        //اظهار صفحة فاتورة شراء
+        private void buttonInvoice_Click(object sender, EventArgs e)
+        {
+            pageLable.Text = "فاتورة شراء";
+            panelEmployee.Hide();
+            addUserBtn.Hide();
+            panelItem.Hide();
+            panelInvoice.Show();
+            panelReceipt.Hide();
+            panelSupplier.Hide();
+            panelCustomer.Hide();
+            panelUnit.Hide();
+            panel_catagory.Hide();
+        }
         private void buttonIvoiceRefresh_Click(object sender, EventArgs e)
         {
             comboBoxInvoiceSupllier.Items.Clear();
@@ -283,7 +362,20 @@ namespace Accounting
             invoice.addInvoiceAsync(dateTimeInvoice.Value.Date, textBoxinvoiceDiscount.Text, textBoxinvoiceTax.Text,
                 textBoxinvoiceNote.Text,textBoxinvoiceID.Text ,suplierFromInvoice);
         }
-
+        //اظهار فاتوره بيع
+        private void buttonReceipt_Click(object sender, EventArgs e)
+        {
+            pageLable.Text = "فاتورة بيع";
+            panelEmployee.Hide();
+            addUserBtn.Hide();
+            panelItem.Hide();
+            panelInvoice.Hide();
+            panelReceipt.Show();
+            panelSupplier.Hide();
+            panelCustomer.Hide();
+            panelUnit.Hide();
+            panel_catagory.Hide();
+        }
         private void buttonCustomerRefresh_Click(object sender, EventArgs e)
         {
             comboBoxReceipt.Items.Clear();
@@ -306,6 +398,20 @@ namespace Accounting
         {
             customerFromReceipt = comboBoxReceipt.Text;
         }
+
+        #endregion
+
+       
+
+       
+
+       
+
+        
+
+      
+
+     
     }
 
 }

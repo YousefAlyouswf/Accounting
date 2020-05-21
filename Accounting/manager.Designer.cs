@@ -37,23 +37,23 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.rightPanel = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonEmployee = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.buttonCustomer = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.buttonUnit = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonSupplier = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.category_btn = new System.Windows.Forms.Button();
+            this.buttonCategory = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.billBtn = new System.Windows.Forms.Button();
+            this.buttonInvoice = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.employeeButton = new System.Windows.Forms.Button();
+            this.buttonReceipt = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.itemButton = new System.Windows.Forms.Button();
+            this.buttonItem = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.homeButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -74,9 +74,6 @@
             this.textBoxItemBuyPrice = new System.Windows.Forms.TextBox();
             this.labelproductName = new System.Windows.Forms.Label();
             this.textBoxItemName = new System.Windows.Forms.TextBox();
-            this.panelHome = new System.Windows.Forms.Panel();
-            this.panelSpare = new System.Windows.Forms.Panel();
-            this.panelBill = new System.Windows.Forms.Panel();
             this.panel_catagory = new System.Windows.Forms.Panel();
             this.panelcatgoryTop = new System.Windows.Forms.Panel();
             this.textBoxCategory = new System.Windows.Forms.TextBox();
@@ -111,7 +108,7 @@
             this.textBoxSuplier_mobile = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxSuplier_Company = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCustomer = new System.Windows.Forms.Panel();
             this.textBoxCustomerPhone = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.textBoxCustomerWeb = new System.Windows.Forms.TextBox();
@@ -129,7 +126,7 @@
             this.textBoxCustomerMobile = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.textBoxCustomerName = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelInvoice = new System.Windows.Forms.Panel();
             this.dateTimeInvoice = new System.Windows.Forms.DateTimePicker();
             this.buttonIvoiceRefresh = new System.Windows.Forms.Button();
             this.comboBoxInvoiceSupllier = new System.Windows.Forms.ComboBox();
@@ -144,7 +141,7 @@
             this.label31 = new System.Windows.Forms.Label();
             this.textBoxinvoiceTax = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelReceipt = new System.Windows.Forms.Panel();
             this.dateTimeReceipt = new System.Windows.Forms.DateTimePicker();
             this.buttonCustomerRefresh = new System.Windows.Forms.Button();
             this.comboBoxReceipt = new System.Windows.Forms.ComboBox();
@@ -158,7 +155,7 @@
             this.textBoxReceiptNote = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.textBoxReceiptTax = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
+            this.labelDateReceipt = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -184,9 +181,9 @@
             this.panelUnitBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Unit)).BeginInit();
             this.panelSupplier.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelCustomer.SuspendLayout();
+            this.panelInvoice.SuspendLayout();
+            this.panelReceipt.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -197,7 +194,7 @@
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1284, 47);
+            this.panelHeader.Size = new System.Drawing.Size(702, 47);
             this.panelHeader.TabIndex = 0;
             // 
             // button1
@@ -208,7 +205,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(1121, 3);
+            this.button1.Location = new System.Drawing.Point(539, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 38);
             this.button1.TabIndex = 4;
@@ -221,7 +218,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1166, 0);
+            this.label1.Location = new System.Drawing.Point(584, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 29);
             this.label1.TabIndex = 3;
@@ -230,45 +227,46 @@
             // rightPanel
             // 
             this.rightPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
-            this.rightPanel.Controls.Add(this.button5);
+            this.rightPanel.Controls.Add(this.buttonEmployee);
             this.rightPanel.Controls.Add(this.pictureBox9);
-            this.rightPanel.Controls.Add(this.button8);
+            this.rightPanel.Controls.Add(this.buttonCustomer);
             this.rightPanel.Controls.Add(this.pictureBox12);
             this.rightPanel.Controls.Add(this.buttonUnit);
             this.rightPanel.Controls.Add(this.pictureBox6);
-            this.rightPanel.Controls.Add(this.button3);
+            this.rightPanel.Controls.Add(this.buttonSupplier);
             this.rightPanel.Controls.Add(this.pictureBox7);
-            this.rightPanel.Controls.Add(this.category_btn);
+            this.rightPanel.Controls.Add(this.buttonCategory);
             this.rightPanel.Controls.Add(this.pictureBox8);
-            this.rightPanel.Controls.Add(this.billBtn);
+            this.rightPanel.Controls.Add(this.buttonInvoice);
             this.rightPanel.Controls.Add(this.pictureBox5);
             this.rightPanel.Controls.Add(this.exitButton);
             this.rightPanel.Controls.Add(this.pictureBox4);
-            this.rightPanel.Controls.Add(this.employeeButton);
+            this.rightPanel.Controls.Add(this.buttonReceipt);
             this.rightPanel.Controls.Add(this.pictureBox3);
-            this.rightPanel.Controls.Add(this.itemButton);
+            this.rightPanel.Controls.Add(this.buttonItem);
             this.rightPanel.Controls.Add(this.pictureBox2);
             this.rightPanel.Controls.Add(this.homeButton);
             this.rightPanel.Controls.Add(this.pictureBox1);
             this.rightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightPanel.Location = new System.Drawing.Point(1121, 47);
+            this.rightPanel.Location = new System.Drawing.Point(539, 47);
             this.rightPanel.Name = "rightPanel";
             this.rightPanel.Size = new System.Drawing.Size(163, 502);
             this.rightPanel.TabIndex = 1;
             // 
-            // button5
+            // buttonEmployee
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(14, 313);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(105, 31);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "الموظفين";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonEmployee.FlatAppearance.BorderSize = 0;
+            this.buttonEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEmployee.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEmployee.ForeColor = System.Drawing.Color.White;
+            this.buttonEmployee.Location = new System.Drawing.Point(14, 313);
+            this.buttonEmployee.Name = "buttonEmployee";
+            this.buttonEmployee.Size = new System.Drawing.Size(105, 31);
+            this.buttonEmployee.TabIndex = 19;
+            this.buttonEmployee.Text = "الموظفين";
+            this.buttonEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonEmployee.UseVisualStyleBackColor = true;
+            this.buttonEmployee.Click += new System.EventHandler(this.buttonEmployee_Click);
             // 
             // pictureBox9
             // 
@@ -280,19 +278,20 @@
             this.pictureBox9.TabIndex = 18;
             this.pictureBox9.TabStop = false;
             // 
-            // button8
+            // buttonCustomer
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(15, 85);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(105, 31);
-            this.button8.TabIndex = 17;
-            this.button8.Text = "العملاء";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = true;
+            this.buttonCustomer.FlatAppearance.BorderSize = 0;
+            this.buttonCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCustomer.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCustomer.ForeColor = System.Drawing.Color.White;
+            this.buttonCustomer.Location = new System.Drawing.Point(15, 85);
+            this.buttonCustomer.Name = "buttonCustomer";
+            this.buttonCustomer.Size = new System.Drawing.Size(105, 31);
+            this.buttonCustomer.TabIndex = 17;
+            this.buttonCustomer.Text = "العملاء";
+            this.buttonCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCustomer.UseVisualStyleBackColor = true;
+            this.buttonCustomer.Click += new System.EventHandler(this.buttonCustomer_Click);
             // 
             // pictureBox12
             // 
@@ -329,19 +328,20 @@
             this.pictureBox6.TabIndex = 14;
             this.pictureBox6.TabStop = false;
             // 
-            // button3
+            // buttonSupplier
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(15, 122);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 31);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "الموزعين";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonSupplier.FlatAppearance.BorderSize = 0;
+            this.buttonSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSupplier.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSupplier.ForeColor = System.Drawing.Color.White;
+            this.buttonSupplier.Location = new System.Drawing.Point(15, 122);
+            this.buttonSupplier.Name = "buttonSupplier";
+            this.buttonSupplier.Size = new System.Drawing.Size(105, 31);
+            this.buttonSupplier.TabIndex = 13;
+            this.buttonSupplier.Text = "الموزعين";
+            this.buttonSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonSupplier.UseVisualStyleBackColor = true;
+            this.buttonSupplier.Click += new System.EventHandler(this.buttonSupplier_Click);
             // 
             // pictureBox7
             // 
@@ -353,20 +353,20 @@
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
             // 
-            // category_btn
+            // buttonCategory
             // 
-            this.category_btn.FlatAppearance.BorderSize = 0;
-            this.category_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.category_btn.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category_btn.ForeColor = System.Drawing.Color.White;
-            this.category_btn.Location = new System.Drawing.Point(14, 237);
-            this.category_btn.Name = "category_btn";
-            this.category_btn.Size = new System.Drawing.Size(105, 31);
-            this.category_btn.TabIndex = 11;
-            this.category_btn.Text = "التصنيف";
-            this.category_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.category_btn.UseVisualStyleBackColor = true;
-            this.category_btn.Click += new System.EventHandler(this.category_btn_Click);
+            this.buttonCategory.FlatAppearance.BorderSize = 0;
+            this.buttonCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCategory.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCategory.ForeColor = System.Drawing.Color.White;
+            this.buttonCategory.Location = new System.Drawing.Point(14, 237);
+            this.buttonCategory.Name = "buttonCategory";
+            this.buttonCategory.Size = new System.Drawing.Size(105, 31);
+            this.buttonCategory.TabIndex = 11;
+            this.buttonCategory.Text = "الاقسام";
+            this.buttonCategory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCategory.UseVisualStyleBackColor = true;
+            this.buttonCategory.Click += new System.EventHandler(this.buttonCategory_Click);
             // 
             // pictureBox8
             // 
@@ -378,20 +378,20 @@
             this.pictureBox8.TabIndex = 10;
             this.pictureBox8.TabStop = false;
             // 
-            // billBtn
+            // buttonInvoice
             // 
-            this.billBtn.FlatAppearance.BorderSize = 0;
-            this.billBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.billBtn.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.billBtn.ForeColor = System.Drawing.Color.White;
-            this.billBtn.Location = new System.Drawing.Point(14, 48);
-            this.billBtn.Name = "billBtn";
-            this.billBtn.Size = new System.Drawing.Size(105, 31);
-            this.billBtn.TabIndex = 9;
-            this.billBtn.Text = "فاتورة بيع";
-            this.billBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.billBtn.UseVisualStyleBackColor = true;
-            this.billBtn.Click += new System.EventHandler(this.billBtn_Click);
+            this.buttonInvoice.FlatAppearance.BorderSize = 0;
+            this.buttonInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInvoice.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInvoice.ForeColor = System.Drawing.Color.White;
+            this.buttonInvoice.Location = new System.Drawing.Point(14, 48);
+            this.buttonInvoice.Name = "buttonInvoice";
+            this.buttonInvoice.Size = new System.Drawing.Size(105, 31);
+            this.buttonInvoice.TabIndex = 9;
+            this.buttonInvoice.Text = "فاتورة بيع";
+            this.buttonInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonInvoice.UseVisualStyleBackColor = true;
+            this.buttonInvoice.Click += new System.EventHandler(this.buttonInvoice_Click);
             // 
             // pictureBox5
             // 
@@ -428,20 +428,20 @@
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
             // 
-            // employeeButton
+            // buttonReceipt
             // 
-            this.employeeButton.FlatAppearance.BorderSize = 0;
-            this.employeeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.employeeButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeButton.ForeColor = System.Drawing.Color.White;
-            this.employeeButton.Location = new System.Drawing.Point(16, 160);
-            this.employeeButton.Name = "employeeButton";
-            this.employeeButton.Size = new System.Drawing.Size(105, 31);
-            this.employeeButton.TabIndex = 5;
-            this.employeeButton.Text = "فاتورة شراء";
-            this.employeeButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.employeeButton.UseVisualStyleBackColor = true;
-            this.employeeButton.Click += new System.EventHandler(this.employee_Click);
+            this.buttonReceipt.FlatAppearance.BorderSize = 0;
+            this.buttonReceipt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReceipt.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReceipt.ForeColor = System.Drawing.Color.White;
+            this.buttonReceipt.Location = new System.Drawing.Point(16, 160);
+            this.buttonReceipt.Name = "buttonReceipt";
+            this.buttonReceipt.Size = new System.Drawing.Size(105, 31);
+            this.buttonReceipt.TabIndex = 5;
+            this.buttonReceipt.Text = "فاتورة شراء";
+            this.buttonReceipt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonReceipt.UseVisualStyleBackColor = true;
+            this.buttonReceipt.Click += new System.EventHandler(this.buttonReceipt_Click);
             // 
             // pictureBox3
             // 
@@ -453,20 +453,20 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // itemButton
+            // buttonItem
             // 
-            this.itemButton.FlatAppearance.BorderSize = 0;
-            this.itemButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.itemButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemButton.ForeColor = System.Drawing.Color.White;
-            this.itemButton.Location = new System.Drawing.Point(15, 199);
-            this.itemButton.Name = "itemButton";
-            this.itemButton.Size = new System.Drawing.Size(105, 31);
-            this.itemButton.TabIndex = 3;
-            this.itemButton.Text = "بضاعة";
-            this.itemButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.itemButton.UseVisualStyleBackColor = true;
-            this.itemButton.Click += new System.EventHandler(this.itemButtonClick);
+            this.buttonItem.FlatAppearance.BorderSize = 0;
+            this.buttonItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonItem.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonItem.ForeColor = System.Drawing.Color.White;
+            this.buttonItem.Location = new System.Drawing.Point(15, 199);
+            this.buttonItem.Name = "buttonItem";
+            this.buttonItem.Size = new System.Drawing.Size(105, 31);
+            this.buttonItem.TabIndex = 3;
+            this.buttonItem.Text = "بضاعة";
+            this.buttonItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonItem.UseVisualStyleBackColor = true;
+            this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
             // 
             // pictureBox2
             // 
@@ -511,7 +511,7 @@
             this.panelSection.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSection.Location = new System.Drawing.Point(0, 47);
             this.panelSection.Name = "panelSection";
-            this.panelSection.Size = new System.Drawing.Size(1121, 33);
+            this.panelSection.Size = new System.Drawing.Size(539, 33);
             this.panelSection.TabIndex = 2;
             // 
             // addUserBtn
@@ -545,7 +545,7 @@
             this.pageLable.AutoSize = true;
             this.pageLable.Dock = System.Windows.Forms.DockStyle.Right;
             this.pageLable.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pageLable.Location = new System.Drawing.Point(1068, 0);
+            this.pageLable.Location = new System.Drawing.Point(486, 0);
             this.pageLable.Name = "pageLable";
             this.pageLable.Size = new System.Drawing.Size(53, 23);
             this.pageLable.TabIndex = 0;
@@ -555,10 +555,10 @@
             // 
             this.panelEmployee.BackColor = System.Drawing.Color.Fuchsia;
             this.panelEmployee.Controls.Add(this.empDataGrid);
-            this.panelEmployee.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelEmployee.Location = new System.Drawing.Point(57, 80);
+            this.panelEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEmployee.Location = new System.Drawing.Point(0, 80);
             this.panelEmployee.Name = "panelEmployee";
-            this.panelEmployee.Size = new System.Drawing.Size(70, 469);
+            this.panelEmployee.Size = new System.Drawing.Size(539, 469);
             this.panelEmployee.TabIndex = 1;
             // 
             // empDataGrid
@@ -606,7 +606,7 @@
             this.empDataGrid.RowTemplate.ReadOnly = true;
             this.empDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.empDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.empDataGrid.Size = new System.Drawing.Size(70, 469);
+            this.empDataGrid.Size = new System.Drawing.Size(539, 469);
             this.empDataGrid.TabIndex = 0;
             this.empDataGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.empDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -646,10 +646,10 @@
             this.panelItem.Controls.Add(this.textBoxItemBuyPrice);
             this.panelItem.Controls.Add(this.labelproductName);
             this.panelItem.Controls.Add(this.textBoxItemName);
-            this.panelItem.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelItem.Location = new System.Drawing.Point(185, 80);
+            this.panelItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelItem.Location = new System.Drawing.Point(0, 80);
             this.panelItem.Name = "panelItem";
-            this.panelItem.Size = new System.Drawing.Size(36, 469);
+            this.panelItem.Size = new System.Drawing.Size(539, 469);
             this.panelItem.TabIndex = 1;
             // 
             // label8
@@ -767,42 +767,15 @@
             this.textBoxItemName.Size = new System.Drawing.Size(119, 36);
             this.textBoxItemName.TabIndex = 2;
             // 
-            // panelHome
-            // 
-            this.panelHome.BackColor = System.Drawing.Color.Lime;
-            this.panelHome.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelHome.Location = new System.Drawing.Point(0, 80);
-            this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(20, 469);
-            this.panelHome.TabIndex = 1;
-            // 
-            // panelSpare
-            // 
-            this.panelSpare.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelSpare.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSpare.Location = new System.Drawing.Point(20, 80);
-            this.panelSpare.Name = "panelSpare";
-            this.panelSpare.Size = new System.Drawing.Size(15, 469);
-            this.panelSpare.TabIndex = 0;
-            // 
-            // panelBill
-            // 
-            this.panelBill.BackColor = System.Drawing.Color.Red;
-            this.panelBill.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelBill.Location = new System.Drawing.Point(35, 80);
-            this.panelBill.Name = "panelBill";
-            this.panelBill.Size = new System.Drawing.Size(22, 469);
-            this.panelBill.TabIndex = 3;
-            // 
             // panel_catagory
             // 
             this.panel_catagory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel_catagory.Controls.Add(this.panelcatgoryTop);
             this.panel_catagory.Controls.Add(this.panelCatgoryBottom);
-            this.panel_catagory.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_catagory.Location = new System.Drawing.Point(127, 80);
+            this.panel_catagory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_catagory.Location = new System.Drawing.Point(0, 80);
             this.panel_catagory.Name = "panel_catagory";
-            this.panel_catagory.Size = new System.Drawing.Size(34, 469);
+            this.panel_catagory.Size = new System.Drawing.Size(539, 469);
             this.panel_catagory.TabIndex = 4;
             // 
             // panelcatgoryTop
@@ -813,7 +786,7 @@
             this.panelcatgoryTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelcatgoryTop.Location = new System.Drawing.Point(0, 0);
             this.panelcatgoryTop.Name = "panelcatgoryTop";
-            this.panelcatgoryTop.Size = new System.Drawing.Size(34, 83);
+            this.panelcatgoryTop.Size = new System.Drawing.Size(539, 83);
             this.panelcatgoryTop.TabIndex = 4;
             // 
             // textBoxCategory
@@ -849,17 +822,17 @@
             this.panelCatgoryBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelCatgoryBottom.Location = new System.Drawing.Point(0, 89);
             this.panelCatgoryBottom.Name = "panelCatgoryBottom";
-            this.panelCatgoryBottom.Size = new System.Drawing.Size(34, 380);
+            this.panelCatgoryBottom.Size = new System.Drawing.Size(539, 380);
             this.panelCatgoryBottom.TabIndex = 2;
             // 
             // categoryGridView
             // 
             this.categoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoryGridView.Dock = System.Windows.Forms.DockStyle.Left;
+            this.categoryGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.categoryGridView.Location = new System.Drawing.Point(0, 0);
             this.categoryGridView.Name = "categoryGridView";
             this.categoryGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.categoryGridView.Size = new System.Drawing.Size(130, 380);
+            this.categoryGridView.Size = new System.Drawing.Size(539, 380);
             this.categoryGridView.TabIndex = 0;
             // 
             // panelUnit
@@ -867,10 +840,10 @@
             this.panelUnit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panelUnit.Controls.Add(this.panelUnitTop);
             this.panelUnit.Controls.Add(this.panelUnitBottom);
-            this.panelUnit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelUnit.Location = new System.Drawing.Point(161, 80);
+            this.panelUnit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelUnit.Location = new System.Drawing.Point(0, 80);
             this.panelUnit.Name = "panelUnit";
-            this.panelUnit.Size = new System.Drawing.Size(24, 469);
+            this.panelUnit.Size = new System.Drawing.Size(539, 469);
             this.panelUnit.TabIndex = 5;
             // 
             // panelUnitTop
@@ -881,7 +854,7 @@
             this.panelUnitTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUnitTop.Location = new System.Drawing.Point(0, 0);
             this.panelUnitTop.Name = "panelUnitTop";
-            this.panelUnitTop.Size = new System.Drawing.Size(24, 83);
+            this.panelUnitTop.Size = new System.Drawing.Size(539, 83);
             this.panelUnitTop.TabIndex = 4;
             // 
             // textBoxUnit
@@ -917,7 +890,7 @@
             this.panelUnitBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelUnitBottom.Location = new System.Drawing.Point(0, 89);
             this.panelUnitBottom.Name = "panelUnitBottom";
-            this.panelUnitBottom.Size = new System.Drawing.Size(24, 380);
+            this.panelUnitBottom.Size = new System.Drawing.Size(539, 380);
             this.panelUnitBottom.TabIndex = 2;
             // 
             // dataGridView1Unit
@@ -927,7 +900,7 @@
             this.dataGridView1Unit.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1Unit.Name = "dataGridView1Unit";
             this.dataGridView1Unit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1Unit.Size = new System.Drawing.Size(24, 380);
+            this.dataGridView1Unit.Size = new System.Drawing.Size(539, 380);
             this.dataGridView1Unit.TabIndex = 0;
             // 
             // panelSupplier
@@ -952,10 +925,10 @@
             this.panelSupplier.Controls.Add(this.textBoxSuplier_mobile);
             this.panelSupplier.Controls.Add(this.label12);
             this.panelSupplier.Controls.Add(this.textBoxSuplier_Company);
-            this.panelSupplier.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSupplier.Location = new System.Drawing.Point(221, 80);
+            this.panelSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSupplier.Location = new System.Drawing.Point(0, 80);
             this.panelSupplier.Name = "panelSupplier";
-            this.panelSupplier.Size = new System.Drawing.Size(36, 469);
+            this.panelSupplier.Size = new System.Drawing.Size(539, 469);
             this.panelSupplier.TabIndex = 6;
             // 
             // textBoxSuplier_phone
@@ -1157,31 +1130,31 @@
             this.textBoxSuplier_Company.Size = new System.Drawing.Size(119, 36);
             this.textBoxSuplier_Company.TabIndex = 2;
             // 
-            // panel1
+            // panelCustomer
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.textBoxCustomerPhone);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.textBoxCustomerWeb);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.textBoxCustomerEmail);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.textBoxCustomerCity);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.textBoxCustomerAddress);
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.buttonAddCustomer);
-            this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.textBoxCustomerFax);
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.textBoxCustomerMobile);
-            this.panel1.Controls.Add(this.label25);
-            this.panel1.Controls.Add(this.textBoxCustomerName);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(257, 80);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(38, 469);
-            this.panel1.TabIndex = 7;
+            this.panelCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelCustomer.Controls.Add(this.textBoxCustomerPhone);
+            this.panelCustomer.Controls.Add(this.label17);
+            this.panelCustomer.Controls.Add(this.textBoxCustomerWeb);
+            this.panelCustomer.Controls.Add(this.label18);
+            this.panelCustomer.Controls.Add(this.textBoxCustomerEmail);
+            this.panelCustomer.Controls.Add(this.label19);
+            this.panelCustomer.Controls.Add(this.textBoxCustomerCity);
+            this.panelCustomer.Controls.Add(this.label20);
+            this.panelCustomer.Controls.Add(this.textBoxCustomerAddress);
+            this.panelCustomer.Controls.Add(this.label21);
+            this.panelCustomer.Controls.Add(this.buttonAddCustomer);
+            this.panelCustomer.Controls.Add(this.label23);
+            this.panelCustomer.Controls.Add(this.textBoxCustomerFax);
+            this.panelCustomer.Controls.Add(this.label24);
+            this.panelCustomer.Controls.Add(this.textBoxCustomerMobile);
+            this.panelCustomer.Controls.Add(this.label25);
+            this.panelCustomer.Controls.Add(this.textBoxCustomerName);
+            this.panelCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCustomer.Location = new System.Drawing.Point(0, 80);
+            this.panelCustomer.Name = "panelCustomer";
+            this.panelCustomer.Size = new System.Drawing.Size(539, 469);
+            this.panelCustomer.TabIndex = 7;
             // 
             // textBoxCustomerPhone
             // 
@@ -1361,28 +1334,28 @@
             this.textBoxCustomerName.Size = new System.Drawing.Size(119, 36);
             this.textBoxCustomerName.TabIndex = 2;
             // 
-            // panel2
+            // panelInvoice
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel2.Controls.Add(this.dateTimeInvoice);
-            this.panel2.Controls.Add(this.buttonIvoiceRefresh);
-            this.panel2.Controls.Add(this.comboBoxInvoiceSupllier);
-            this.panel2.Controls.Add(this.textBoxinvoiceDiscount);
-            this.panel2.Controls.Add(this.label26);
-            this.panel2.Controls.Add(this.textBoxinvoiceID);
-            this.panel2.Controls.Add(this.label28);
-            this.panel2.Controls.Add(this.label29);
-            this.panel2.Controls.Add(this.buttonAddInvoice);
-            this.panel2.Controls.Add(this.label30);
-            this.panel2.Controls.Add(this.textBoxinvoiceNote);
-            this.panel2.Controls.Add(this.label31);
-            this.panel2.Controls.Add(this.textBoxinvoiceTax);
-            this.panel2.Controls.Add(this.label32);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(295, 80);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(73, 469);
-            this.panel2.TabIndex = 8;
+            this.panelInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelInvoice.Controls.Add(this.dateTimeInvoice);
+            this.panelInvoice.Controls.Add(this.buttonIvoiceRefresh);
+            this.panelInvoice.Controls.Add(this.comboBoxInvoiceSupllier);
+            this.panelInvoice.Controls.Add(this.textBoxinvoiceDiscount);
+            this.panelInvoice.Controls.Add(this.label26);
+            this.panelInvoice.Controls.Add(this.textBoxinvoiceID);
+            this.panelInvoice.Controls.Add(this.label28);
+            this.panelInvoice.Controls.Add(this.label29);
+            this.panelInvoice.Controls.Add(this.buttonAddInvoice);
+            this.panelInvoice.Controls.Add(this.label30);
+            this.panelInvoice.Controls.Add(this.textBoxinvoiceNote);
+            this.panelInvoice.Controls.Add(this.label31);
+            this.panelInvoice.Controls.Add(this.textBoxinvoiceTax);
+            this.panelInvoice.Controls.Add(this.label32);
+            this.panelInvoice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInvoice.Location = new System.Drawing.Point(0, 80);
+            this.panelInvoice.Name = "panelInvoice";
+            this.panelInvoice.Size = new System.Drawing.Size(539, 469);
+            this.panelInvoice.TabIndex = 8;
             // 
             // dateTimeInvoice
             // 
@@ -1526,28 +1499,28 @@
             this.label32.TabIndex = 3;
             this.label32.Text = "التاريخ";
             // 
-            // panel3
+            // panelReceipt
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel3.Controls.Add(this.dateTimeReceipt);
-            this.panel3.Controls.Add(this.buttonCustomerRefresh);
-            this.panel3.Controls.Add(this.comboBoxReceipt);
-            this.panel3.Controls.Add(this.textBoxReceiptDiscount);
-            this.panel3.Controls.Add(this.label22);
-            this.panel3.Controls.Add(this.textBoxReceiptID);
-            this.panel3.Controls.Add(this.label27);
-            this.panel3.Controls.Add(this.label33);
-            this.panel3.Controls.Add(this.buttonAddReceipt);
-            this.panel3.Controls.Add(this.label34);
-            this.panel3.Controls.Add(this.textBoxReceiptNote);
-            this.panel3.Controls.Add(this.label35);
-            this.panel3.Controls.Add(this.textBoxReceiptTax);
-            this.panel3.Controls.Add(this.label36);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(368, 80);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(458, 469);
-            this.panel3.TabIndex = 9;
+            this.panelReceipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelReceipt.Controls.Add(this.dateTimeReceipt);
+            this.panelReceipt.Controls.Add(this.buttonCustomerRefresh);
+            this.panelReceipt.Controls.Add(this.comboBoxReceipt);
+            this.panelReceipt.Controls.Add(this.textBoxReceiptDiscount);
+            this.panelReceipt.Controls.Add(this.label22);
+            this.panelReceipt.Controls.Add(this.textBoxReceiptID);
+            this.panelReceipt.Controls.Add(this.label27);
+            this.panelReceipt.Controls.Add(this.label33);
+            this.panelReceipt.Controls.Add(this.buttonAddReceipt);
+            this.panelReceipt.Controls.Add(this.label34);
+            this.panelReceipt.Controls.Add(this.textBoxReceiptNote);
+            this.panelReceipt.Controls.Add(this.label35);
+            this.panelReceipt.Controls.Add(this.textBoxReceiptTax);
+            this.panelReceipt.Controls.Add(this.labelDateReceipt);
+            this.panelReceipt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelReceipt.Location = new System.Drawing.Point(0, 80);
+            this.panelReceipt.Name = "panelReceipt";
+            this.panelReceipt.Size = new System.Drawing.Size(539, 469);
+            this.panelReceipt.TabIndex = 9;
             // 
             // dateTimeReceipt
             // 
@@ -1680,33 +1653,30 @@
             this.textBoxReceiptTax.Size = new System.Drawing.Size(119, 36);
             this.textBoxReceiptTax.TabIndex = 6;
             // 
-            // label36
+            // labelDateReceipt
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(389, 13);
-            this.label36.Name = "label36";
-            this.label36.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label36.Size = new System.Drawing.Size(43, 28);
-            this.label36.TabIndex = 3;
-            this.label36.Text = "التاريخ";
+            this.labelDateReceipt.AutoSize = true;
+            this.labelDateReceipt.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateReceipt.Location = new System.Drawing.Point(389, 13);
+            this.labelDateReceipt.Name = "labelDateReceipt";
+            this.labelDateReceipt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelDateReceipt.Size = new System.Drawing.Size(43, 28);
+            this.labelDateReceipt.TabIndex = 3;
+            this.labelDateReceipt.Text = "التاريخ";
             // 
             // manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 549);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelSupplier);
-            this.Controls.Add(this.panelItem);
-            this.Controls.Add(this.panelUnit);
+            this.ClientSize = new System.Drawing.Size(702, 549);
             this.Controls.Add(this.panel_catagory);
+            this.Controls.Add(this.panelItem);
+            this.Controls.Add(this.panelSupplier);
+            this.Controls.Add(this.panelInvoice);
+            this.Controls.Add(this.panelReceipt);
+            this.Controls.Add(this.panelCustomer);
+            this.Controls.Add(this.panelUnit);
             this.Controls.Add(this.panelEmployee);
-            this.Controls.Add(this.panelBill);
-            this.Controls.Add(this.panelSpare);
-            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelSection);
             this.Controls.Add(this.rightPanel);
             this.Controls.Add(this.panelHeader);
@@ -1745,12 +1715,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Unit)).EndInit();
             this.panelSupplier.ResumeLayout(false);
             this.panelSupplier.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelCustomer.ResumeLayout(false);
+            this.panelCustomer.PerformLayout();
+            this.panelInvoice.ResumeLayout(false);
+            this.panelInvoice.PerformLayout();
+            this.panelReceipt.ResumeLayout(false);
+            this.panelReceipt.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1766,19 +1736,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button itemButton;
-        private System.Windows.Forms.Button employeeButton;
+        private System.Windows.Forms.Button buttonItem;
+        private System.Windows.Forms.Button buttonReceipt;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panelSpare;
-        private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Panel panelEmployee;
         private Guna.UI.WinForms.GunaCircleButton addUserBtn;
         public Guna.UI.WinForms.GunaDataGridView empDataGrid;
-        private System.Windows.Forms.Button billBtn;
+        private System.Windows.Forms.Button buttonInvoice;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panelBill;
         private System.Windows.Forms.Panel panelItem;
         private System.Windows.Forms.Button buttonNewItem;
         private System.Windows.Forms.Label label6;
@@ -1787,15 +1754,15 @@
         private System.Windows.Forms.TextBox textBoxItemBuyPrice;
         private System.Windows.Forms.Label labelproductName;
         private System.Windows.Forms.TextBox textBoxItemName;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonEmployee;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button buttonCustomer;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button buttonUnit;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonSupplier;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button category_btn;
+        private System.Windows.Forms.Button buttonCategory;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel_catagory;
         private System.Windows.Forms.Panel panelcatgoryTop;
@@ -1835,7 +1802,7 @@
         private System.Windows.Forms.TextBox textBoxSuplier_mobile;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxSuplier_Company;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelCustomer;
         private System.Windows.Forms.TextBox textBoxCustomerPhone;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBoxCustomerWeb;
@@ -1853,7 +1820,7 @@
         private System.Windows.Forms.TextBox textBoxCustomerMobile;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBoxCustomerName;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelInvoice;
         private System.Windows.Forms.Button buttonIvoiceRefresh;
         private System.Windows.Forms.ComboBox comboBoxInvoiceSupllier;
         private System.Windows.Forms.TextBox textBoxinvoiceDiscount;
@@ -1868,7 +1835,7 @@
         private System.Windows.Forms.TextBox textBoxinvoiceTax;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.DateTimePicker dateTimeInvoice;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelReceipt;
         private System.Windows.Forms.DateTimePicker dateTimeReceipt;
         private System.Windows.Forms.Button buttonCustomerRefresh;
         private System.Windows.Forms.ComboBox comboBoxReceipt;
@@ -1882,6 +1849,6 @@
         private System.Windows.Forms.TextBox textBoxReceiptNote;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox textBoxReceiptTax;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label labelDateReceipt;
     }
 }
