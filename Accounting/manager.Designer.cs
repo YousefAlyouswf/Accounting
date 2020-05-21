@@ -111,6 +111,24 @@
             this.textBoxSuplier_Web = new System.Windows.Forms.TextBox();
             this.textBoxSuplier_phone = new System.Windows.Forms.TextBox();
             this.textBoxSuplier_person = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxCustomerPhone = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBoxCustomerWeb = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBoxCustomerEmail = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBoxCustomerCity = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBoxCustomerAddress = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.buttonAddCustomer = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBoxCustomerFax = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBoxCustomerMobile = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBoxCustomerName = new System.Windows.Forms.TextBox();
             this.panelHeader.SuspendLayout();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -136,6 +154,7 @@
             this.panelUnitBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Unit)).BeginInit();
             this.panelSupplier.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -505,7 +524,7 @@
             this.panelEmployee.BackColor = System.Drawing.Color.Fuchsia;
             this.panelEmployee.Controls.Add(this.empDataGrid);
             this.panelEmployee.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelEmployee.Location = new System.Drawing.Point(146, 80);
+            this.panelEmployee.Location = new System.Drawing.Point(57, 80);
             this.panelEmployee.Name = "panelEmployee";
             this.panelEmployee.Size = new System.Drawing.Size(70, 469);
             this.panelEmployee.TabIndex = 1;
@@ -525,9 +544,9 @@
             this.panelItem.Controls.Add(this.labelproductName);
             this.panelItem.Controls.Add(this.textBoxItemName);
             this.panelItem.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelItem.Location = new System.Drawing.Point(499, 80);
+            this.panelItem.Location = new System.Drawing.Point(185, 80);
             this.panelItem.Name = "panelItem";
-            this.panelItem.Size = new System.Drawing.Size(126, 469);
+            this.panelItem.Size = new System.Drawing.Size(36, 469);
             this.panelItem.TabIndex = 1;
             // 
             // buttonNewItem
@@ -682,25 +701,25 @@
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelHome.Location = new System.Drawing.Point(0, 80);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(44, 469);
+            this.panelHome.Size = new System.Drawing.Size(20, 469);
             this.panelHome.TabIndex = 1;
             // 
             // panelSpare
             // 
             this.panelSpare.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelSpare.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSpare.Location = new System.Drawing.Point(44, 80);
+            this.panelSpare.Location = new System.Drawing.Point(20, 80);
             this.panelSpare.Name = "panelSpare";
-            this.panelSpare.Size = new System.Drawing.Size(47, 469);
+            this.panelSpare.Size = new System.Drawing.Size(15, 469);
             this.panelSpare.TabIndex = 0;
             // 
             // panelBill
             // 
             this.panelBill.BackColor = System.Drawing.Color.Red;
             this.panelBill.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelBill.Location = new System.Drawing.Point(91, 80);
+            this.panelBill.Location = new System.Drawing.Point(35, 80);
             this.panelBill.Name = "panelBill";
-            this.panelBill.Size = new System.Drawing.Size(55, 469);
+            this.panelBill.Size = new System.Drawing.Size(22, 469);
             this.panelBill.TabIndex = 3;
             // 
             // panel_catagory
@@ -709,9 +728,9 @@
             this.panel_catagory.Controls.Add(this.panelcatgoryTop);
             this.panel_catagory.Controls.Add(this.panelCatgoryBottom);
             this.panel_catagory.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_catagory.Location = new System.Drawing.Point(216, 80);
+            this.panel_catagory.Location = new System.Drawing.Point(127, 80);
             this.panel_catagory.Name = "panel_catagory";
-            this.panel_catagory.Size = new System.Drawing.Size(151, 469);
+            this.panel_catagory.Size = new System.Drawing.Size(34, 469);
             this.panel_catagory.TabIndex = 4;
             // 
             // panelcatgoryTop
@@ -722,7 +741,7 @@
             this.panelcatgoryTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelcatgoryTop.Location = new System.Drawing.Point(0, 0);
             this.panelcatgoryTop.Name = "panelcatgoryTop";
-            this.panelcatgoryTop.Size = new System.Drawing.Size(151, 83);
+            this.panelcatgoryTop.Size = new System.Drawing.Size(34, 83);
             this.panelcatgoryTop.TabIndex = 4;
             // 
             // textBoxCategory
@@ -758,7 +777,7 @@
             this.panelCatgoryBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelCatgoryBottom.Location = new System.Drawing.Point(0, 89);
             this.panelCatgoryBottom.Name = "panelCatgoryBottom";
-            this.panelCatgoryBottom.Size = new System.Drawing.Size(151, 380);
+            this.panelCatgoryBottom.Size = new System.Drawing.Size(34, 380);
             this.panelCatgoryBottom.TabIndex = 2;
             // 
             // categoryGridView
@@ -777,9 +796,9 @@
             this.panelUnit.Controls.Add(this.panelUnitTop);
             this.panelUnit.Controls.Add(this.panelUnitBottom);
             this.panelUnit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelUnit.Location = new System.Drawing.Point(367, 80);
+            this.panelUnit.Location = new System.Drawing.Point(161, 80);
             this.panelUnit.Name = "panelUnit";
-            this.panelUnit.Size = new System.Drawing.Size(132, 469);
+            this.panelUnit.Size = new System.Drawing.Size(24, 469);
             this.panelUnit.TabIndex = 5;
             // 
             // panelUnitTop
@@ -790,7 +809,7 @@
             this.panelUnitTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUnitTop.Location = new System.Drawing.Point(0, 0);
             this.panelUnitTop.Name = "panelUnitTop";
-            this.panelUnitTop.Size = new System.Drawing.Size(132, 83);
+            this.panelUnitTop.Size = new System.Drawing.Size(24, 83);
             this.panelUnitTop.TabIndex = 4;
             // 
             // textBoxUnit
@@ -826,7 +845,7 @@
             this.panelUnitBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelUnitBottom.Location = new System.Drawing.Point(0, 89);
             this.panelUnitBottom.Name = "panelUnitBottom";
-            this.panelUnitBottom.Size = new System.Drawing.Size(132, 380);
+            this.panelUnitBottom.Size = new System.Drawing.Size(24, 380);
             this.panelUnitBottom.TabIndex = 2;
             // 
             // dataGridView1Unit
@@ -836,7 +855,7 @@
             this.dataGridView1Unit.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1Unit.Name = "dataGridView1Unit";
             this.dataGridView1Unit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1Unit.Size = new System.Drawing.Size(132, 380);
+            this.dataGridView1Unit.Size = new System.Drawing.Size(24, 380);
             this.dataGridView1Unit.TabIndex = 0;
             // 
             // comboBoxItemcategory
@@ -902,9 +921,9 @@
             this.panelSupplier.Controls.Add(this.label12);
             this.panelSupplier.Controls.Add(this.textBoxSuplier_Company);
             this.panelSupplier.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSupplier.Location = new System.Drawing.Point(625, 80);
+            this.panelSupplier.Location = new System.Drawing.Point(221, 80);
             this.panelSupplier.Name = "panelSupplier";
-            this.panelSupplier.Size = new System.Drawing.Size(450, 469);
+            this.panelSupplier.Size = new System.Drawing.Size(36, 469);
             this.panelSupplier.TabIndex = 6;
             // 
             // label4
@@ -1106,11 +1125,216 @@
             this.textBoxSuplier_person.Size = new System.Drawing.Size(119, 36);
             this.textBoxSuplier_person.TabIndex = 27;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.textBoxCustomerPhone);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.textBoxCustomerWeb);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.textBoxCustomerEmail);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.textBoxCustomerCity);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.textBoxCustomerAddress);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.buttonAddCustomer);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.textBoxCustomerFax);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.textBoxCustomerMobile);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.textBoxCustomerName);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(257, 80);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(450, 469);
+            this.panel1.TabIndex = 7;
+            // 
+            // textBoxCustomerPhone
+            // 
+            this.textBoxCustomerPhone.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerPhone.Location = new System.Drawing.Point(60, 48);
+            this.textBoxCustomerPhone.Multiline = true;
+            this.textBoxCustomerPhone.Name = "textBoxCustomerPhone";
+            this.textBoxCustomerPhone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerPhone.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerPhone.TabIndex = 28;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(337, 241);
+            this.label17.Name = "label17";
+            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label17.Size = new System.Drawing.Size(94, 28);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "الموقع الاكتروني";
+            // 
+            // textBoxCustomerWeb
+            // 
+            this.textBoxCustomerWeb.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerWeb.Location = new System.Drawing.Point(319, 275);
+            this.textBoxCustomerWeb.Multiline = true;
+            this.textBoxCustomerWeb.Name = "textBoxCustomerWeb";
+            this.textBoxCustomerWeb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerWeb.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerWeb.TabIndex = 25;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(54, 96);
+            this.label18.Name = "label18";
+            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label18.Size = new System.Drawing.Size(89, 28);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "البريد الاكتروني";
+            // 
+            // textBoxCustomerEmail
+            // 
+            this.textBoxCustomerEmail.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerEmail.Location = new System.Drawing.Point(19, 127);
+            this.textBoxCustomerEmail.Multiline = true;
+            this.textBoxCustomerEmail.Name = "textBoxCustomerEmail";
+            this.textBoxCustomerEmail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerEmail.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerEmail.TabIndex = 23;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(251, 173);
+            this.label19.Name = "label19";
+            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label19.Size = new System.Drawing.Size(43, 28);
+            this.label19.TabIndex = 22;
+            this.label19.Text = "المدينه";
+            // 
+            // textBoxCustomerCity
+            // 
+            this.textBoxCustomerCity.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerCity.Location = new System.Drawing.Point(196, 204);
+            this.textBoxCustomerCity.Multiline = true;
+            this.textBoxCustomerCity.Name = "textBoxCustomerCity";
+            this.textBoxCustomerCity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerCity.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerCity.TabIndex = 21;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(367, 172);
+            this.label20.Name = "label20";
+            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label20.Size = new System.Drawing.Size(44, 28);
+            this.label20.TabIndex = 20;
+            this.label20.Text = "العنوان";
+            // 
+            // textBoxCustomerAddress
+            // 
+            this.textBoxCustomerAddress.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerAddress.Location = new System.Drawing.Point(321, 204);
+            this.textBoxCustomerAddress.Multiline = true;
+            this.textBoxCustomerAddress.Name = "textBoxCustomerAddress";
+            this.textBoxCustomerAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerAddress.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerAddress.TabIndex = 19;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(120, 17);
+            this.label21.Name = "label21";
+            this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label21.Size = new System.Drawing.Size(45, 28);
+            this.label21.TabIndex = 18;
+            this.label21.Text = "الهاتف";
+            // 
+            // buttonAddCustomer
+            // 
+            this.buttonAddCustomer.Location = new System.Drawing.Point(197, 425);
+            this.buttonAddCustomer.Name = "buttonAddCustomer";
+            this.buttonAddCustomer.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddCustomer.TabIndex = 11;
+            this.buttonAddCustomer.Text = "إدخال";
+            this.buttonAddCustomer.UseVisualStyleBackColor = true;
+            this.buttonAddCustomer.Click += new System.EventHandler(this.buttonAddCustomer_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(216, 96);
+            this.label23.Name = "label23";
+            this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label23.Size = new System.Drawing.Size(45, 28);
+            this.label23.TabIndex = 9;
+            this.label23.Text = "الفاكس";
+            // 
+            // textBoxCustomerFax
+            // 
+            this.textBoxCustomerFax.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerFax.Location = new System.Drawing.Point(153, 127);
+            this.textBoxCustomerFax.Multiline = true;
+            this.textBoxCustomerFax.Name = "textBoxCustomerFax";
+            this.textBoxCustomerFax.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerFax.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerFax.TabIndex = 8;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(374, 96);
+            this.label24.Name = "label24";
+            this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label24.Size = new System.Drawing.Size(42, 28);
+            this.label24.TabIndex = 7;
+            this.label24.Text = "الجوال";
+            // 
+            // textBoxCustomerMobile
+            // 
+            this.textBoxCustomerMobile.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerMobile.Location = new System.Drawing.Point(319, 127);
+            this.textBoxCustomerMobile.Multiline = true;
+            this.textBoxCustomerMobile.Name = "textBoxCustomerMobile";
+            this.textBoxCustomerMobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerMobile.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerMobile.TabIndex = 6;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(389, 13);
+            this.label25.Name = "label25";
+            this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label25.Size = new System.Drawing.Size(42, 28);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "العميل";
+            // 
+            // textBoxCustomerName
+            // 
+            this.textBoxCustomerName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerName.Location = new System.Drawing.Point(321, 45);
+            this.textBoxCustomerName.Multiline = true;
+            this.textBoxCustomerName.Name = "textBoxCustomerName";
+            this.textBoxCustomerName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxCustomerName.Size = new System.Drawing.Size(119, 36);
+            this.textBoxCustomerName.TabIndex = 2;
+            // 
             // manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 549);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSupplier);
             this.Controls.Add(this.panelItem);
             this.Controls.Add(this.panelUnit);
@@ -1157,6 +1381,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Unit)).EndInit();
             this.panelSupplier.ResumeLayout(false);
             this.panelSupplier.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1241,5 +1467,23 @@
         private System.Windows.Forms.TextBox textBoxSuplier_mobile;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxSuplier_Company;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBoxCustomerPhone;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBoxCustomerWeb;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBoxCustomerEmail;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBoxCustomerCity;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBoxCustomerAddress;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button buttonAddCustomer;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBoxCustomerFax;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBoxCustomerMobile;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBoxCustomerName;
     }
 }

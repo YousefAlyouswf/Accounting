@@ -22,6 +22,7 @@ namespace Accounting
         Category category = new Category();
         Unit unit = new Unit();
         SupplierClass supplier = new SupplierClass();
+        CustomerClass customer = new CustomerClass();
         string itemCatgory;
         string itemUnit;
         public manager()
@@ -73,7 +74,7 @@ namespace Accounting
             panelBill.Hide();
 
         }
-       
+
         //اظهار صفحة فاتورة البيع
         private void billBtn_Click(object sender, EventArgs e)
         {
@@ -131,7 +132,7 @@ namespace Accounting
             categoryGridView.DataSource = category.dataTable();
         }
         //---------------------------------- صفحة الوحدات 
-      
+
         //اظهار جميع الوحدات
         private void buttonUnit_Click(object sender, EventArgs e)
         {
@@ -177,7 +178,7 @@ namespace Accounting
         //اظافة بضاعه جديده
         private void buttonNewItem_Click(object sender, EventArgs e)
         {
-            
+
 
             string URL = "http://gewscrap.com/allfolder/spare/newItem.php?itemName=" +
                   textBoxItemName.Text + "&category=" + itemCatgory + "&unit=" + itemUnit
@@ -231,14 +232,24 @@ namespace Accounting
             }
         }
         #endregion
-
-        //---------------------------------- صفحة الموزعين بداية
-       async private void buttonAddSuplier_Click(object sender, EventArgs e)
+        //---------------------------------- صفحة الموزعين , العملاء بداية
+        #region
+        async private void buttonAddSuplier_Click(object sender, EventArgs e)
         {
-          await  supplier.addSupplyAsync(textBoxSuplier_Company.Text, textBoxSuplier_person.Text, textBoxSuplier_phone.Text,
-                textBoxSuplier_mobile.Text, textBoxSuplier_Fax.Text, textBoxSuplier_Address.Text, textBoxSuplier_City.Text,
-                textBoxSuplier_Email.Text, textBoxSuplier_Web.Text);
+            await supplier.addSupplyAsync(textBoxSuplier_Company.Text, textBoxSuplier_person.Text, textBoxSuplier_phone.Text,
+                  textBoxSuplier_mobile.Text, textBoxSuplier_Fax.Text, textBoxSuplier_Address.Text, textBoxSuplier_City.Text,
+                  textBoxSuplier_Email.Text, textBoxSuplier_Web.Text);
         }
+
+        async private void buttonAddCustomer_Click(object sender, EventArgs e)
+        {
+            await customer.addCustomerAsync(
+                textBoxCustomerName.Text, textBoxCustomerPhone.Text,
+                  textBoxCustomerMobile.Text, textBoxCustomerFax.Text, textBoxCustomerAddress.Text, textBoxCustomerCity.Text,
+                  textBoxCustomerEmail.Text, textBoxCustomerWeb.Text
+                );
+        } 
+        #endregion
     }
 
 }

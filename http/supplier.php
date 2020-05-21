@@ -19,5 +19,5 @@ $web = $_GET['web'];
     } else {
         $result = mysqli_query($conn , "INSERT INTO `suppliers`(`companyName`, `person`, `phone`, `mobile`, `fax`, `address`, `city`, `email`, `site`) 
 VALUES ('$company','$person','$phone','$mobile','$fax','$address','$city','$email','$web')");
-       
+
     }
