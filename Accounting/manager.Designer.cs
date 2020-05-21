@@ -33,48 +33,121 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(manager));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.rightPanel = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.buttonUnit = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.category_btn = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.billBtn = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.employeeButton = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.spareButton = new System.Windows.Forms.Button();
+            this.itemButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.homeButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelSection = new System.Windows.Forms.Panel();
             this.addUserBtn = new Guna.UI.WinForms.GunaCircleButton();
             this.pageLable = new System.Windows.Forms.Label();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.panelEmployee = new System.Windows.Forms.Panel();
+            this.panelItem = new System.Windows.Forms.Panel();
+            this.buttonNewItem = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxItemPriceSell = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxItemBuyPrice = new System.Windows.Forms.TextBox();
+            this.labelproductName = new System.Windows.Forms.Label();
+            this.textBoxItemName = new System.Windows.Forms.TextBox();
             this.empDataGrid = new Guna.UI.WinForms.GunaDataGridView();
             this.panelHome = new System.Windows.Forms.Panel();
             this.panelSpare = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panelBill = new System.Windows.Forms.Panel();
+            this.panel_catagory = new System.Windows.Forms.Panel();
+            this.panelcatgoryTop = new System.Windows.Forms.Panel();
+            this.textBoxCategory = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.addCatgreoryBtn = new System.Windows.Forms.Button();
+            this.panelCatgoryBottom = new System.Windows.Forms.Panel();
+            this.categoryGridView = new System.Windows.Forms.DataGridView();
+            this.panelUnit = new System.Windows.Forms.Panel();
+            this.panelUnitTop = new System.Windows.Forms.Panel();
+            this.textBoxUnit = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonAddUnit = new System.Windows.Forms.Button();
+            this.panelUnitBottom = new System.Windows.Forms.Panel();
+            this.dataGridView1Unit = new System.Windows.Forms.DataGridView();
+            this.comboBoxItemcategory = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxItemUnit = new System.Windows.Forms.ComboBox();
+            this.panelSupplier = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.buttonAddSuplier = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Fax = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_mobile = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Company = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Email = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_City = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Address = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Web = new System.Windows.Forms.TextBox();
+            this.textBoxSuplier_phone = new System.Windows.Forms.TextBox();
+            this.textBoxSuplier_person = new System.Windows.Forms.TextBox();
+            this.panelHeader.SuspendLayout();
             this.rightPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panelMain.SuspendLayout();
+            this.panelSection.SuspendLayout();
             this.panelEmployee.SuspendLayout();
+            this.panelItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.empDataGrid)).BeginInit();
+            this.panel_catagory.SuspendLayout();
+            this.panelcatgoryTop.SuspendLayout();
+            this.panelCatgoryBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryGridView)).BeginInit();
+            this.panelUnit.SuspendLayout();
+            this.panelUnitTop.SuspendLayout();
+            this.panelUnitBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Unit)).BeginInit();
+            this.panelSupplier.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelHeader
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(209)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(690, 47);
-            this.panel1.TabIndex = 0;
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(209)))));
+            this.panelHeader.Controls.Add(this.button1);
+            this.panelHeader.Controls.Add(this.label1);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1284, 47);
+            this.panelHeader.TabIndex = 0;
             // 
             // button1
             // 
@@ -84,7 +157,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(527, 3);
+            this.button1.Location = new System.Drawing.Point(1121, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 38);
             this.button1.TabIndex = 4;
@@ -97,7 +170,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(572, 0);
+            this.label1.Location = new System.Drawing.Point(1166, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 29);
             this.label1.TabIndex = 3;
@@ -106,19 +179,178 @@
             // rightPanel
             // 
             this.rightPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
+            this.rightPanel.Controls.Add(this.button5);
+            this.rightPanel.Controls.Add(this.pictureBox9);
+            this.rightPanel.Controls.Add(this.button8);
+            this.rightPanel.Controls.Add(this.pictureBox12);
+            this.rightPanel.Controls.Add(this.buttonUnit);
+            this.rightPanel.Controls.Add(this.pictureBox6);
+            this.rightPanel.Controls.Add(this.button3);
+            this.rightPanel.Controls.Add(this.pictureBox7);
+            this.rightPanel.Controls.Add(this.category_btn);
+            this.rightPanel.Controls.Add(this.pictureBox8);
+            this.rightPanel.Controls.Add(this.billBtn);
+            this.rightPanel.Controls.Add(this.pictureBox5);
             this.rightPanel.Controls.Add(this.exitButton);
             this.rightPanel.Controls.Add(this.pictureBox4);
             this.rightPanel.Controls.Add(this.employeeButton);
             this.rightPanel.Controls.Add(this.pictureBox3);
-            this.rightPanel.Controls.Add(this.spareButton);
+            this.rightPanel.Controls.Add(this.itemButton);
             this.rightPanel.Controls.Add(this.pictureBox2);
             this.rightPanel.Controls.Add(this.homeButton);
             this.rightPanel.Controls.Add(this.pictureBox1);
             this.rightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightPanel.Location = new System.Drawing.Point(490, 47);
+            this.rightPanel.Location = new System.Drawing.Point(1121, 47);
             this.rightPanel.Name = "rightPanel";
-            this.rightPanel.Size = new System.Drawing.Size(200, 502);
+            this.rightPanel.Size = new System.Drawing.Size(163, 502);
             this.rightPanel.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(14, 313);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(105, 31);
+            this.button5.TabIndex = 19;
+            this.button5.Text = "الموظفين";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::Accounting.Properties.Resources.professions_and_jobs;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(125, 312);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox9.TabIndex = 18;
+            this.pictureBox9.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(15, 85);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(105, 31);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "العملاء";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::Accounting.Properties.Resources.professions_and_jobs;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Location = new System.Drawing.Point(126, 84);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox12.TabIndex = 16;
+            this.pictureBox12.TabStop = false;
+            // 
+            // buttonUnit
+            // 
+            this.buttonUnit.FlatAppearance.BorderSize = 0;
+            this.buttonUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUnit.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUnit.ForeColor = System.Drawing.Color.White;
+            this.buttonUnit.Location = new System.Drawing.Point(14, 275);
+            this.buttonUnit.Name = "buttonUnit";
+            this.buttonUnit.Size = new System.Drawing.Size(105, 31);
+            this.buttonUnit.TabIndex = 15;
+            this.buttonUnit.Text = "الوحدات";
+            this.buttonUnit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonUnit.UseVisualStyleBackColor = true;
+            this.buttonUnit.Click += new System.EventHandler(this.buttonUnit_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::Accounting.Properties.Resources.business;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(125, 274);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(15, 122);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(105, 31);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "الموزعين";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::Accounting.Properties.Resources.professions_and_jobs;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(126, 121);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox7.TabIndex = 12;
+            this.pictureBox7.TabStop = false;
+            // 
+            // category_btn
+            // 
+            this.category_btn.FlatAppearance.BorderSize = 0;
+            this.category_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.category_btn.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.category_btn.ForeColor = System.Drawing.Color.White;
+            this.category_btn.Location = new System.Drawing.Point(14, 237);
+            this.category_btn.Name = "category_btn";
+            this.category_btn.Size = new System.Drawing.Size(105, 31);
+            this.category_btn.TabIndex = 11;
+            this.category_btn.Text = "التصنيف";
+            this.category_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.category_btn.UseVisualStyleBackColor = true;
+            this.category_btn.Click += new System.EventHandler(this.category_btn_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::Accounting.Properties.Resources.car;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(125, 236);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox8.TabIndex = 10;
+            this.pictureBox8.TabStop = false;
+            // 
+            // billBtn
+            // 
+            this.billBtn.FlatAppearance.BorderSize = 0;
+            this.billBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.billBtn.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.billBtn.ForeColor = System.Drawing.Color.White;
+            this.billBtn.Location = new System.Drawing.Point(14, 48);
+            this.billBtn.Name = "billBtn";
+            this.billBtn.Size = new System.Drawing.Size(105, 31);
+            this.billBtn.TabIndex = 9;
+            this.billBtn.Text = "فاتورة بيع";
+            this.billBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.billBtn.UseVisualStyleBackColor = true;
+            this.billBtn.Click += new System.EventHandler(this.billBtn_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::Accounting.Properties.Resources.business;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(125, 47);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
             // 
             // exitButton
             // 
@@ -126,9 +358,9 @@
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(37, 169);
+            this.exitButton.Location = new System.Drawing.Point(43, 458);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(120, 31);
+            this.exitButton.Size = new System.Drawing.Size(68, 31);
             this.exitButton.TabIndex = 7;
             this.exitButton.Text = "خروج";
             this.exitButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -139,7 +371,7 @@
             // 
             this.pictureBox4.BackgroundImage = global::Accounting.Properties.Resources.web;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(163, 168);
+            this.pictureBox4.Location = new System.Drawing.Point(117, 458);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(34, 32);
             this.pictureBox4.TabIndex = 6;
@@ -151,11 +383,11 @@
             this.employeeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.employeeButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeButton.ForeColor = System.Drawing.Color.White;
-            this.employeeButton.Location = new System.Drawing.Point(37, 123);
+            this.employeeButton.Location = new System.Drawing.Point(16, 160);
             this.employeeButton.Name = "employeeButton";
-            this.employeeButton.Size = new System.Drawing.Size(120, 31);
+            this.employeeButton.Size = new System.Drawing.Size(105, 31);
             this.employeeButton.TabIndex = 5;
-            this.employeeButton.Text = "الموظفين";
+            this.employeeButton.Text = "فاتورة شراء";
             this.employeeButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.employeeButton.UseVisualStyleBackColor = true;
             this.employeeButton.Click += new System.EventHandler(this.employee_Click);
@@ -164,32 +396,32 @@
             // 
             this.pictureBox3.BackgroundImage = global::Accounting.Properties.Resources.professions_and_jobs;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(163, 122);
+            this.pictureBox3.Location = new System.Drawing.Point(127, 159);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(34, 32);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // spareButton
+            // itemButton
             // 
-            this.spareButton.FlatAppearance.BorderSize = 0;
-            this.spareButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.spareButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spareButton.ForeColor = System.Drawing.Color.White;
-            this.spareButton.Location = new System.Drawing.Point(37, 75);
-            this.spareButton.Name = "spareButton";
-            this.spareButton.Size = new System.Drawing.Size(120, 31);
-            this.spareButton.TabIndex = 3;
-            this.spareButton.Text = "قطع الغيار";
-            this.spareButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.spareButton.UseVisualStyleBackColor = true;
-            this.spareButton.Click += new System.EventHandler(this.spareButtonClick);
+            this.itemButton.FlatAppearance.BorderSize = 0;
+            this.itemButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.itemButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemButton.ForeColor = System.Drawing.Color.White;
+            this.itemButton.Location = new System.Drawing.Point(15, 199);
+            this.itemButton.Name = "itemButton";
+            this.itemButton.Size = new System.Drawing.Size(105, 31);
+            this.itemButton.TabIndex = 3;
+            this.itemButton.Text = "بضاعة";
+            this.itemButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.itemButton.UseVisualStyleBackColor = true;
+            this.itemButton.Click += new System.EventHandler(this.itemButtonClick);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Accounting.Properties.Resources.car;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(163, 74);
+            this.pictureBox2.Location = new System.Drawing.Point(126, 198);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(34, 32);
             this.pictureBox2.TabIndex = 2;
@@ -201,9 +433,9 @@
             this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeButton.ForeColor = System.Drawing.Color.White;
-            this.homeButton.Location = new System.Drawing.Point(37, 19);
+            this.homeButton.Location = new System.Drawing.Point(14, 7);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(120, 31);
+            this.homeButton.Size = new System.Drawing.Size(105, 31);
             this.homeButton.TabIndex = 1;
             this.homeButton.Text = "الرئيسية";
             this.homeButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -214,22 +446,22 @@
             // 
             this.pictureBox1.BackgroundImage = global::Accounting.Properties.Resources.color;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(163, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(125, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 32);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // panelSection
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.addUserBtn);
-            this.panel3.Controls.Add(this.pageLable);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 47);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(490, 33);
-            this.panel3.TabIndex = 2;
+            this.panelSection.BackColor = System.Drawing.Color.White;
+            this.panelSection.Controls.Add(this.addUserBtn);
+            this.panelSection.Controls.Add(this.pageLable);
+            this.panelSection.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSection.Location = new System.Drawing.Point(0, 47);
+            this.panelSection.Name = "panelSection";
+            this.panelSection.Size = new System.Drawing.Size(1121, 33);
+            this.panelSection.TabIndex = 2;
             // 
             // addUserBtn
             // 
@@ -262,33 +494,116 @@
             this.pageLable.AutoSize = true;
             this.pageLable.Dock = System.Windows.Forms.DockStyle.Right;
             this.pageLable.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pageLable.Location = new System.Drawing.Point(437, 0);
+            this.pageLable.Location = new System.Drawing.Point(1068, 0);
             this.pageLable.Name = "pageLable";
             this.pageLable.Size = new System.Drawing.Size(53, 23);
             this.pageLable.TabIndex = 0;
             this.pageLable.Text = "التقرير";
             // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.Color.Yellow;
-            this.panelMain.Controls.Add(this.panelEmployee);
-            this.panelMain.Controls.Add(this.panelHome);
-            this.panelMain.Controls.Add(this.panelSpare);
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 80);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(490, 469);
-            this.panelMain.TabIndex = 3;
-            // 
             // panelEmployee
             // 
             this.panelEmployee.BackColor = System.Drawing.Color.Fuchsia;
             this.panelEmployee.Controls.Add(this.empDataGrid);
-            this.panelEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEmployee.Location = new System.Drawing.Point(0, 0);
+            this.panelEmployee.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelEmployee.Location = new System.Drawing.Point(146, 80);
             this.panelEmployee.Name = "panelEmployee";
-            this.panelEmployee.Size = new System.Drawing.Size(490, 469);
-            this.panelEmployee.TabIndex = 2;
+            this.panelEmployee.Size = new System.Drawing.Size(70, 469);
+            this.panelEmployee.TabIndex = 1;
+            // 
+            // panelItem
+            // 
+            this.panelItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelItem.Controls.Add(this.label8);
+            this.panelItem.Controls.Add(this.comboBoxItemUnit);
+            this.panelItem.Controls.Add(this.label7);
+            this.panelItem.Controls.Add(this.comboBoxItemcategory);
+            this.panelItem.Controls.Add(this.buttonNewItem);
+            this.panelItem.Controls.Add(this.label6);
+            this.panelItem.Controls.Add(this.textBoxItemPriceSell);
+            this.panelItem.Controls.Add(this.label5);
+            this.panelItem.Controls.Add(this.textBoxItemBuyPrice);
+            this.panelItem.Controls.Add(this.labelproductName);
+            this.panelItem.Controls.Add(this.textBoxItemName);
+            this.panelItem.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelItem.Location = new System.Drawing.Point(499, 80);
+            this.panelItem.Name = "panelItem";
+            this.panelItem.Size = new System.Drawing.Size(126, 469);
+            this.panelItem.TabIndex = 1;
+            // 
+            // buttonNewItem
+            // 
+            this.buttonNewItem.Location = new System.Drawing.Point(192, 203);
+            this.buttonNewItem.Name = "buttonNewItem";
+            this.buttonNewItem.Size = new System.Drawing.Size(75, 23);
+            this.buttonNewItem.TabIndex = 11;
+            this.buttonNewItem.Text = "إدخال";
+            this.buttonNewItem.UseVisualStyleBackColor = true;
+            this.buttonNewItem.Click += new System.EventHandler(this.buttonNewItem_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(216, 96);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label6.Size = new System.Drawing.Size(61, 28);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "سعر البيع";
+            // 
+            // textBoxItemPriceSell
+            // 
+            this.textBoxItemPriceSell.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxItemPriceSell.Location = new System.Drawing.Point(153, 127);
+            this.textBoxItemPriceSell.Multiline = true;
+            this.textBoxItemPriceSell.Name = "textBoxItemPriceSell";
+            this.textBoxItemPriceSell.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxItemPriceSell.Size = new System.Drawing.Size(119, 36);
+            this.textBoxItemPriceSell.TabIndex = 8;
+            this.textBoxItemPriceSell.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.productSell_keyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(374, 96);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label5.Size = new System.Drawing.Size(69, 28);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "سعر الشراء";
+            // 
+            // textBoxItemBuyPrice
+            // 
+            this.textBoxItemBuyPrice.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxItemBuyPrice.Location = new System.Drawing.Point(319, 127);
+            this.textBoxItemBuyPrice.Multiline = true;
+            this.textBoxItemBuyPrice.Name = "textBoxItemBuyPrice";
+            this.textBoxItemBuyPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxItemBuyPrice.Size = new System.Drawing.Size(119, 36);
+            this.textBoxItemBuyPrice.TabIndex = 6;
+            this.textBoxItemBuyPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.productBuy_Keypress);
+            // 
+            // labelproductName
+            // 
+            this.labelproductName.AutoSize = true;
+            this.labelproductName.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelproductName.Location = new System.Drawing.Point(367, 13);
+            this.labelproductName.Name = "labelproductName";
+            this.labelproductName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelproductName.Size = new System.Drawing.Size(76, 28);
+            this.labelproductName.TabIndex = 3;
+            this.labelproductName.Text = "أسم البضاعه";
+            // 
+            // textBoxItemName
+            // 
+            this.textBoxItemName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxItemName.Location = new System.Drawing.Point(321, 45);
+            this.textBoxItemName.Multiline = true;
+            this.textBoxItemName.Name = "textBoxItemName";
+            this.textBoxItemName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxItemName.Size = new System.Drawing.Size(119, 36);
+            this.textBoxItemName.TabIndex = 2;
             // 
             // empDataGrid
             // 
@@ -335,7 +650,7 @@
             this.empDataGrid.RowTemplate.ReadOnly = true;
             this.empDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.empDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.empDataGrid.Size = new System.Drawing.Size(490, 469);
+            this.empDataGrid.Size = new System.Drawing.Size(70, 469);
             this.empDataGrid.TabIndex = 0;
             this.empDataGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.empDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -364,71 +679,567 @@
             // panelHome
             // 
             this.panelHome.BackColor = System.Drawing.Color.Lime;
-            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHome.Location = new System.Drawing.Point(0, 0);
+            this.panelHome.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelHome.Location = new System.Drawing.Point(0, 80);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(490, 469);
+            this.panelHome.Size = new System.Drawing.Size(44, 469);
             this.panelHome.TabIndex = 1;
             // 
             // panelSpare
             // 
             this.panelSpare.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelSpare.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSpare.Location = new System.Drawing.Point(0, 0);
+            this.panelSpare.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSpare.Location = new System.Drawing.Point(44, 80);
             this.panelSpare.Name = "panelSpare";
-            this.panelSpare.Size = new System.Drawing.Size(490, 469);
+            this.panelSpare.Size = new System.Drawing.Size(47, 469);
             this.panelSpare.TabIndex = 0;
+            // 
+            // panelBill
+            // 
+            this.panelBill.BackColor = System.Drawing.Color.Red;
+            this.panelBill.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelBill.Location = new System.Drawing.Point(91, 80);
+            this.panelBill.Name = "panelBill";
+            this.panelBill.Size = new System.Drawing.Size(55, 469);
+            this.panelBill.TabIndex = 3;
+            // 
+            // panel_catagory
+            // 
+            this.panel_catagory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel_catagory.Controls.Add(this.panelcatgoryTop);
+            this.panel_catagory.Controls.Add(this.panelCatgoryBottom);
+            this.panel_catagory.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_catagory.Location = new System.Drawing.Point(216, 80);
+            this.panel_catagory.Name = "panel_catagory";
+            this.panel_catagory.Size = new System.Drawing.Size(151, 469);
+            this.panel_catagory.TabIndex = 4;
+            // 
+            // panelcatgoryTop
+            // 
+            this.panelcatgoryTop.Controls.Add(this.textBoxCategory);
+            this.panelcatgoryTop.Controls.Add(this.label2);
+            this.panelcatgoryTop.Controls.Add(this.addCatgreoryBtn);
+            this.panelcatgoryTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelcatgoryTop.Location = new System.Drawing.Point(0, 0);
+            this.panelcatgoryTop.Name = "panelcatgoryTop";
+            this.panelcatgoryTop.Size = new System.Drawing.Size(151, 83);
+            this.panelcatgoryTop.TabIndex = 4;
+            // 
+            // textBoxCategory
+            // 
+            this.textBoxCategory.Location = new System.Drawing.Point(174, 19);
+            this.textBoxCategory.Multiline = true;
+            this.textBoxCategory.Name = "textBoxCategory";
+            this.textBoxCategory.Size = new System.Drawing.Size(225, 36);
+            this.textBoxCategory.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(345, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "أسم القسم";
+            // 
+            // addCatgreoryBtn
+            // 
+            this.addCatgreoryBtn.Location = new System.Drawing.Point(85, 32);
+            this.addCatgreoryBtn.Name = "addCatgreoryBtn";
+            this.addCatgreoryBtn.Size = new System.Drawing.Size(75, 23);
+            this.addCatgreoryBtn.TabIndex = 1;
+            this.addCatgreoryBtn.Text = "إظافة";
+            this.addCatgreoryBtn.UseVisualStyleBackColor = true;
+            this.addCatgreoryBtn.Click += new System.EventHandler(this.addCatgreoryBtn_Click);
+            // 
+            // panelCatgoryBottom
+            // 
+            this.panelCatgoryBottom.Controls.Add(this.categoryGridView);
+            this.panelCatgoryBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelCatgoryBottom.Location = new System.Drawing.Point(0, 89);
+            this.panelCatgoryBottom.Name = "panelCatgoryBottom";
+            this.panelCatgoryBottom.Size = new System.Drawing.Size(151, 380);
+            this.panelCatgoryBottom.TabIndex = 2;
+            // 
+            // categoryGridView
+            // 
+            this.categoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.categoryGridView.Dock = System.Windows.Forms.DockStyle.Left;
+            this.categoryGridView.Location = new System.Drawing.Point(0, 0);
+            this.categoryGridView.Name = "categoryGridView";
+            this.categoryGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.categoryGridView.Size = new System.Drawing.Size(130, 380);
+            this.categoryGridView.TabIndex = 0;
+            // 
+            // panelUnit
+            // 
+            this.panelUnit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelUnit.Controls.Add(this.panelUnitTop);
+            this.panelUnit.Controls.Add(this.panelUnitBottom);
+            this.panelUnit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelUnit.Location = new System.Drawing.Point(367, 80);
+            this.panelUnit.Name = "panelUnit";
+            this.panelUnit.Size = new System.Drawing.Size(132, 469);
+            this.panelUnit.TabIndex = 5;
+            // 
+            // panelUnitTop
+            // 
+            this.panelUnitTop.Controls.Add(this.textBoxUnit);
+            this.panelUnitTop.Controls.Add(this.label3);
+            this.panelUnitTop.Controls.Add(this.buttonAddUnit);
+            this.panelUnitTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUnitTop.Location = new System.Drawing.Point(0, 0);
+            this.panelUnitTop.Name = "panelUnitTop";
+            this.panelUnitTop.Size = new System.Drawing.Size(132, 83);
+            this.panelUnitTop.TabIndex = 4;
+            // 
+            // textBoxUnit
+            // 
+            this.textBoxUnit.Location = new System.Drawing.Point(174, 19);
+            this.textBoxUnit.Multiline = true;
+            this.textBoxUnit.Name = "textBoxUnit";
+            this.textBoxUnit.Size = new System.Drawing.Size(225, 36);
+            this.textBoxUnit.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(345, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "أسم الوحدة";
+            // 
+            // buttonAddUnit
+            // 
+            this.buttonAddUnit.Location = new System.Drawing.Point(85, 32);
+            this.buttonAddUnit.Name = "buttonAddUnit";
+            this.buttonAddUnit.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddUnit.TabIndex = 1;
+            this.buttonAddUnit.Text = "إظافة";
+            this.buttonAddUnit.UseVisualStyleBackColor = true;
+            this.buttonAddUnit.Click += new System.EventHandler(this.buttonAddUnit_Click_1);
+            // 
+            // panelUnitBottom
+            // 
+            this.panelUnitBottom.Controls.Add(this.dataGridView1Unit);
+            this.panelUnitBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelUnitBottom.Location = new System.Drawing.Point(0, 89);
+            this.panelUnitBottom.Name = "panelUnitBottom";
+            this.panelUnitBottom.Size = new System.Drawing.Size(132, 380);
+            this.panelUnitBottom.TabIndex = 2;
+            // 
+            // dataGridView1Unit
+            // 
+            this.dataGridView1Unit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1Unit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1Unit.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1Unit.Name = "dataGridView1Unit";
+            this.dataGridView1Unit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridView1Unit.Size = new System.Drawing.Size(132, 380);
+            this.dataGridView1Unit.TabIndex = 0;
+            // 
+            // comboBoxItemcategory
+            // 
+            this.comboBoxItemcategory.FormattingEnabled = true;
+            this.comboBoxItemcategory.Location = new System.Drawing.Point(173, 51);
+            this.comboBoxItemcategory.Name = "comboBoxItemcategory";
+            this.comboBoxItemcategory.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxItemcategory.TabIndex = 15;
+            this.comboBoxItemcategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemcategory_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(259, 17);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label7.Size = new System.Drawing.Size(36, 28);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "القسم";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(120, 17);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label8.Size = new System.Drawing.Size(41, 28);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "الوحده";
+            // 
+            // comboBoxItemUnit
+            // 
+            this.comboBoxItemUnit.FormattingEnabled = true;
+            this.comboBoxItemUnit.Location = new System.Drawing.Point(34, 51);
+            this.comboBoxItemUnit.Name = "comboBoxItemUnit";
+            this.comboBoxItemUnit.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxItemUnit.TabIndex = 17;
+            this.comboBoxItemUnit.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemUnit_SelectedIndexChanged);
+            // 
+            // panelSupplier
+            // 
+            this.panelSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_phone);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_person);
+            this.panelSupplier.Controls.Add(this.label16);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_Web);
+            this.panelSupplier.Controls.Add(this.label13);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_Email);
+            this.panelSupplier.Controls.Add(this.label14);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_City);
+            this.panelSupplier.Controls.Add(this.label15);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_Address);
+            this.panelSupplier.Controls.Add(this.label4);
+            this.panelSupplier.Controls.Add(this.label9);
+            this.panelSupplier.Controls.Add(this.buttonAddSuplier);
+            this.panelSupplier.Controls.Add(this.label10);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_Fax);
+            this.panelSupplier.Controls.Add(this.label11);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_mobile);
+            this.panelSupplier.Controls.Add(this.label12);
+            this.panelSupplier.Controls.Add(this.textBoxSuplier_Company);
+            this.panelSupplier.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSupplier.Location = new System.Drawing.Point(625, 80);
+            this.panelSupplier.Name = "panelSupplier";
+            this.panelSupplier.Size = new System.Drawing.Size(450, 469);
+            this.panelSupplier.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(120, 17);
+            this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label4.Size = new System.Drawing.Size(45, 28);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "الهاتف";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(259, 17);
+            this.label9.Name = "label9";
+            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label9.Size = new System.Drawing.Size(42, 28);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "الموزع";
+            // 
+            // buttonAddSuplier
+            // 
+            this.buttonAddSuplier.Location = new System.Drawing.Point(197, 425);
+            this.buttonAddSuplier.Name = "buttonAddSuplier";
+            this.buttonAddSuplier.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddSuplier.TabIndex = 11;
+            this.buttonAddSuplier.Text = "إدخال";
+            this.buttonAddSuplier.UseVisualStyleBackColor = true;
+            this.buttonAddSuplier.Click += new System.EventHandler(this.buttonAddSuplier_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(216, 96);
+            this.label10.Name = "label10";
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label10.Size = new System.Drawing.Size(45, 28);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "الفاكس";
+            // 
+            // textBoxSuplier_Fax
+            // 
+            this.textBoxSuplier_Fax.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Fax.Location = new System.Drawing.Point(153, 127);
+            this.textBoxSuplier_Fax.Multiline = true;
+            this.textBoxSuplier_Fax.Name = "textBoxSuplier_Fax";
+            this.textBoxSuplier_Fax.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Fax.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Fax.TabIndex = 8;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(374, 96);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label11.Size = new System.Drawing.Size(42, 28);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "الجوال";
+            // 
+            // textBoxSuplier_mobile
+            // 
+            this.textBoxSuplier_mobile.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_mobile.Location = new System.Drawing.Point(319, 127);
+            this.textBoxSuplier_mobile.Multiline = true;
+            this.textBoxSuplier_mobile.Name = "textBoxSuplier_mobile";
+            this.textBoxSuplier_mobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_mobile.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_mobile.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(367, 13);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label12.Size = new System.Drawing.Size(44, 28);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "الشركة";
+            // 
+            // textBoxSuplier_Company
+            // 
+            this.textBoxSuplier_Company.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Company.Location = new System.Drawing.Point(321, 45);
+            this.textBoxSuplier_Company.Multiline = true;
+            this.textBoxSuplier_Company.Name = "textBoxSuplier_Company";
+            this.textBoxSuplier_Company.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Company.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Company.TabIndex = 2;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(54, 96);
+            this.label13.Name = "label13";
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label13.Size = new System.Drawing.Size(89, 28);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "البريد الاكتروني";
+            // 
+            // textBoxSuplier_Email
+            // 
+            this.textBoxSuplier_Email.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Email.Location = new System.Drawing.Point(19, 127);
+            this.textBoxSuplier_Email.Multiline = true;
+            this.textBoxSuplier_Email.Name = "textBoxSuplier_Email";
+            this.textBoxSuplier_Email.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Email.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Email.TabIndex = 23;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(251, 173);
+            this.label14.Name = "label14";
+            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label14.Size = new System.Drawing.Size(43, 28);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "المدينه";
+            // 
+            // textBoxSuplier_City
+            // 
+            this.textBoxSuplier_City.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_City.Location = new System.Drawing.Point(196, 204);
+            this.textBoxSuplier_City.Multiline = true;
+            this.textBoxSuplier_City.Name = "textBoxSuplier_City";
+            this.textBoxSuplier_City.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_City.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_City.TabIndex = 21;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(367, 172);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label15.Size = new System.Drawing.Size(44, 28);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "العنوان";
+            // 
+            // textBoxSuplier_Address
+            // 
+            this.textBoxSuplier_Address.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Address.Location = new System.Drawing.Point(321, 204);
+            this.textBoxSuplier_Address.Multiline = true;
+            this.textBoxSuplier_Address.Name = "textBoxSuplier_Address";
+            this.textBoxSuplier_Address.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Address.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Address.TabIndex = 19;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(337, 241);
+            this.label16.Name = "label16";
+            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label16.Size = new System.Drawing.Size(94, 28);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "الموقع الاكتروني";
+            // 
+            // textBoxSuplier_Web
+            // 
+            this.textBoxSuplier_Web.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Web.Location = new System.Drawing.Point(319, 275);
+            this.textBoxSuplier_Web.Multiline = true;
+            this.textBoxSuplier_Web.Name = "textBoxSuplier_Web";
+            this.textBoxSuplier_Web.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Web.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Web.TabIndex = 25;
+            // 
+            // textBoxSuplier_phone
+            // 
+            this.textBoxSuplier_phone.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_phone.Location = new System.Drawing.Point(60, 48);
+            this.textBoxSuplier_phone.Multiline = true;
+            this.textBoxSuplier_phone.Name = "textBoxSuplier_phone";
+            this.textBoxSuplier_phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_phone.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_phone.TabIndex = 28;
+            // 
+            // textBoxSuplier_person
+            // 
+            this.textBoxSuplier_person.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_person.Location = new System.Drawing.Point(194, 48);
+            this.textBoxSuplier_person.Multiline = true;
+            this.textBoxSuplier_person.Name = "textBoxSuplier_person";
+            this.textBoxSuplier_person.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_person.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_person.TabIndex = 27;
             // 
             // manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 549);
-            this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1284, 549);
+            this.Controls.Add(this.panelSupplier);
+            this.Controls.Add(this.panelItem);
+            this.Controls.Add(this.panelUnit);
+            this.Controls.Add(this.panel_catagory);
+            this.Controls.Add(this.panelEmployee);
+            this.Controls.Add(this.panelBill);
+            this.Controls.Add(this.panelSpare);
+            this.Controls.Add(this.panelHome);
+            this.Controls.Add(this.panelSection);
             this.Controls.Add(this.rightPanel);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelHeader);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الإدارة";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             this.rightPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panelMain.ResumeLayout(false);
+            this.panelSection.ResumeLayout(false);
+            this.panelSection.PerformLayout();
             this.panelEmployee.ResumeLayout(false);
+            this.panelItem.ResumeLayout(false);
+            this.panelItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.empDataGrid)).EndInit();
+            this.panel_catagory.ResumeLayout(false);
+            this.panelcatgoryTop.ResumeLayout(false);
+            this.panelcatgoryTop.PerformLayout();
+            this.panelCatgoryBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.categoryGridView)).EndInit();
+            this.panelUnit.ResumeLayout(false);
+            this.panelUnitTop.ResumeLayout(false);
+            this.panelUnitTop.PerformLayout();
+            this.panelUnitBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Unit)).EndInit();
+            this.panelSupplier.ResumeLayout(false);
+            this.panelSupplier.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Panel rightPanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelSection;
         private System.Windows.Forms.Label pageLable;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button spareButton;
+        private System.Windows.Forms.Button itemButton;
         private System.Windows.Forms.Button employeeButton;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panelSpare;
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Panel panelEmployee;
         private Guna.UI.WinForms.GunaCircleButton addUserBtn;
         public Guna.UI.WinForms.GunaDataGridView empDataGrid;
+        private System.Windows.Forms.Button billBtn;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panelBill;
+        private System.Windows.Forms.Panel panelItem;
+        private System.Windows.Forms.Button buttonNewItem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxItemPriceSell;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxItemBuyPrice;
+        private System.Windows.Forms.Label labelproductName;
+        private System.Windows.Forms.TextBox textBoxItemName;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Button buttonUnit;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button category_btn;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Panel panel_catagory;
+        private System.Windows.Forms.Panel panelcatgoryTop;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panelCatgoryBottom;
+        public System.Windows.Forms.Button addCatgreoryBtn;
+        public System.Windows.Forms.TextBox textBoxCategory;
+        private System.Windows.Forms.DataGridView categoryGridView;
+        private System.Windows.Forms.Panel panelUnit;
+        private System.Windows.Forms.Panel panelUnitTop;
+        public System.Windows.Forms.TextBox textBoxUnit;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button buttonAddUnit;
+        private System.Windows.Forms.Panel panelUnitBottom;
+        private System.Windows.Forms.DataGridView dataGridView1Unit;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxItemUnit;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxItemcategory;
+        private System.Windows.Forms.Panel panelSupplier;
+        private System.Windows.Forms.TextBox textBoxSuplier_phone;
+        private System.Windows.Forms.TextBox textBoxSuplier_person;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBoxSuplier_Web;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBoxSuplier_Email;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBoxSuplier_City;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBoxSuplier_Address;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button buttonAddSuplier;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxSuplier_Fax;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBoxSuplier_mobile;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxSuplier_Company;
     }
 }

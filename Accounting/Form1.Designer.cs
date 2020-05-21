@@ -54,6 +54,7 @@
             this.userName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.userName.Click += new System.EventHandler(this.clearNum);
             this.userName.TextChanged += new System.EventHandler(this.userChange);
+            this.userName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.number_keyDown);
             // 
             // password
             // 
@@ -70,6 +71,7 @@
             this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.password.Click += new System.EventHandler(this.clearPassword);
             this.password.TextChanged += new System.EventHandler(this.passChange);
+            this.password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pass_keydown);
             // 
             // panel1
             // 

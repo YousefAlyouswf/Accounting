@@ -123,6 +123,7 @@ namespace Accounting
             {
                 userName.ForeColor = Color.Silver;
             }
+           
         }
 
         private void passChange(object sender, EventArgs e)
@@ -134,6 +135,22 @@ namespace Accounting
             else
             {
                 password.ForeColor = Color.Silver;
+            }
+        }
+
+        private void number_keyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(this, new EventArgs());
+            }
+        }
+
+        private void pass_keydown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(this, new EventArgs());
             }
         }
     }
