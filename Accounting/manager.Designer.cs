@@ -61,7 +61,12 @@
             this.addUserBtn = new Guna.UI.WinForms.GunaCircleButton();
             this.pageLable = new System.Windows.Forms.Label();
             this.panelEmployee = new System.Windows.Forms.Panel();
+            this.empDataGrid = new Guna.UI.WinForms.GunaDataGridView();
             this.panelItem = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxItemUnit = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxItemcategory = new System.Windows.Forms.ComboBox();
             this.buttonNewItem = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxItemPriceSell = new System.Windows.Forms.TextBox();
@@ -69,7 +74,6 @@
             this.textBoxItemBuyPrice = new System.Windows.Forms.TextBox();
             this.labelproductName = new System.Windows.Forms.Label();
             this.textBoxItemName = new System.Windows.Forms.TextBox();
-            this.empDataGrid = new Guna.UI.WinForms.GunaDataGridView();
             this.panelHome = new System.Windows.Forms.Panel();
             this.panelSpare = new System.Windows.Forms.Panel();
             this.panelBill = new System.Windows.Forms.Panel();
@@ -87,11 +91,17 @@
             this.buttonAddUnit = new System.Windows.Forms.Button();
             this.panelUnitBottom = new System.Windows.Forms.Panel();
             this.dataGridView1Unit = new System.Windows.Forms.DataGridView();
-            this.comboBoxItemcategory = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBoxItemUnit = new System.Windows.Forms.ComboBox();
             this.panelSupplier = new System.Windows.Forms.Panel();
+            this.textBoxSuplier_phone = new System.Windows.Forms.TextBox();
+            this.textBoxSuplier_person = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Web = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Email = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_City = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBoxSuplier_Address = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.buttonAddSuplier = new System.Windows.Forms.Button();
@@ -101,16 +111,6 @@
             this.textBoxSuplier_mobile = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxSuplier_Company = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxSuplier_Email = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBoxSuplier_City = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBoxSuplier_Address = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBoxSuplier_Web = new System.Windows.Forms.TextBox();
-            this.textBoxSuplier_phone = new System.Windows.Forms.TextBox();
-            this.textBoxSuplier_person = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBoxCustomerPhone = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -130,6 +130,9 @@
             this.label25 = new System.Windows.Forms.Label();
             this.textBoxCustomerName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimeInvoice = new System.Windows.Forms.DateTimePicker();
+            this.buttonIvoiceRefresh = new System.Windows.Forms.Button();
+            this.comboBoxInvoiceSupllier = new System.Windows.Forms.ComboBox();
             this.textBoxinvoiceDiscount = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.textBoxinvoiceID = new System.Windows.Forms.TextBox();
@@ -141,9 +144,21 @@
             this.label31 = new System.Windows.Forms.Label();
             this.textBoxinvoiceTax = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.comboBoxInvoiceSupllier = new System.Windows.Forms.ComboBox();
-            this.buttonIvoiceRefresh = new System.Windows.Forms.Button();
-            this.dateTimeInvoice = new System.Windows.Forms.DateTimePicker();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dateTimeReceipt = new System.Windows.Forms.DateTimePicker();
+            this.buttonCustomerRefresh = new System.Windows.Forms.Button();
+            this.comboBoxReceipt = new System.Windows.Forms.ComboBox();
+            this.textBoxReceiptDiscount = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBoxReceiptID = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.buttonAddReceipt = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBoxReceiptNote = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.textBoxReceiptTax = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -158,8 +173,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSection.SuspendLayout();
             this.panelEmployee.SuspendLayout();
-            this.panelItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.empDataGrid)).BeginInit();
+            this.panelItem.SuspendLayout();
             this.panel_catagory.SuspendLayout();
             this.panelcatgoryTop.SuspendLayout();
             this.panelCatgoryBottom.SuspendLayout();
@@ -171,6 +186,7 @@
             this.panelSupplier.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -545,6 +561,77 @@
             this.panelEmployee.Size = new System.Drawing.Size(70, 469);
             this.panelEmployee.TabIndex = 1;
             // 
+            // empDataGrid
+            // 
+            this.empDataGrid.AllowUserToAddRows = false;
+            this.empDataGrid.AllowUserToDeleteRows = false;
+            this.empDataGrid.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.empDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.empDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.empDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.empDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.empDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.empDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.empDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.empDataGrid.ColumnHeadersHeight = 40;
+            this.empDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.empDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.empDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.empDataGrid.EnableHeadersVisualStyles = false;
+            this.empDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.empDataGrid.Location = new System.Drawing.Point(0, 0);
+            this.empDataGrid.MultiSelect = false;
+            this.empDataGrid.Name = "empDataGrid";
+            this.empDataGrid.ReadOnly = true;
+            this.empDataGrid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.empDataGrid.RowHeadersVisible = false;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.empDataGrid.RowTemplate.Height = 40;
+            this.empDataGrid.RowTemplate.ReadOnly = true;
+            this.empDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.empDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.empDataGrid.Size = new System.Drawing.Size(70, 469);
+            this.empDataGrid.TabIndex = 0;
+            this.empDataGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.empDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.empDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.empDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.empDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.empDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.empDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.empDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.empDataGrid.ThemeStyle.HeaderStyle.Height = 40;
+            this.empDataGrid.ThemeStyle.ReadOnly = true;
+            this.empDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.empDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.empDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.empDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.empDataGrid.ThemeStyle.RowsStyle.Height = 40;
+            this.empDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.empDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.empDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showInfo);
+            // 
             // panelItem
             // 
             this.panelItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -564,6 +651,46 @@
             this.panelItem.Name = "panelItem";
             this.panelItem.Size = new System.Drawing.Size(36, 469);
             this.panelItem.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(120, 17);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label8.Size = new System.Drawing.Size(41, 28);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "الوحده";
+            // 
+            // comboBoxItemUnit
+            // 
+            this.comboBoxItemUnit.FormattingEnabled = true;
+            this.comboBoxItemUnit.Location = new System.Drawing.Point(34, 51);
+            this.comboBoxItemUnit.Name = "comboBoxItemUnit";
+            this.comboBoxItemUnit.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxItemUnit.TabIndex = 17;
+            this.comboBoxItemUnit.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemUnit_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(259, 17);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label7.Size = new System.Drawing.Size(36, 28);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "القسم";
+            // 
+            // comboBoxItemcategory
+            // 
+            this.comboBoxItemcategory.FormattingEnabled = true;
+            this.comboBoxItemcategory.Location = new System.Drawing.Point(173, 51);
+            this.comboBoxItemcategory.Name = "comboBoxItemcategory";
+            this.comboBoxItemcategory.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxItemcategory.TabIndex = 15;
+            this.comboBoxItemcategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemcategory_SelectedIndexChanged);
             // 
             // buttonNewItem
             // 
@@ -639,77 +766,6 @@
             this.textBoxItemName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBoxItemName.Size = new System.Drawing.Size(119, 36);
             this.textBoxItemName.TabIndex = 2;
-            // 
-            // empDataGrid
-            // 
-            this.empDataGrid.AllowUserToAddRows = false;
-            this.empDataGrid.AllowUserToDeleteRows = false;
-            this.empDataGrid.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.empDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.empDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.empDataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.empDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.empDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.empDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.empDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.empDataGrid.ColumnHeadersHeight = 40;
-            this.empDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.empDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.empDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.empDataGrid.EnableHeadersVisualStyles = false;
-            this.empDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.empDataGrid.Location = new System.Drawing.Point(0, 0);
-            this.empDataGrid.MultiSelect = false;
-            this.empDataGrid.Name = "empDataGrid";
-            this.empDataGrid.ReadOnly = true;
-            this.empDataGrid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.empDataGrid.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.empDataGrid.RowTemplate.Height = 40;
-            this.empDataGrid.RowTemplate.ReadOnly = true;
-            this.empDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.empDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.empDataGrid.Size = new System.Drawing.Size(70, 469);
-            this.empDataGrid.TabIndex = 0;
-            this.empDataGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.empDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.empDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.empDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.empDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.empDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.empDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.empDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.empDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.empDataGrid.ThemeStyle.HeaderStyle.Height = 40;
-            this.empDataGrid.ThemeStyle.ReadOnly = true;
-            this.empDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.empDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.empDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.empDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.empDataGrid.ThemeStyle.RowsStyle.Height = 40;
-            this.empDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.empDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.empDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showInfo);
             // 
             // panelHome
             // 
@@ -874,46 +930,6 @@
             this.dataGridView1Unit.Size = new System.Drawing.Size(24, 380);
             this.dataGridView1Unit.TabIndex = 0;
             // 
-            // comboBoxItemcategory
-            // 
-            this.comboBoxItemcategory.FormattingEnabled = true;
-            this.comboBoxItemcategory.Location = new System.Drawing.Point(173, 51);
-            this.comboBoxItemcategory.Name = "comboBoxItemcategory";
-            this.comboBoxItemcategory.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxItemcategory.TabIndex = 15;
-            this.comboBoxItemcategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemcategory_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(259, 17);
-            this.label7.Name = "label7";
-            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(36, 28);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "القسم";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(120, 17);
-            this.label8.Name = "label8";
-            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(41, 28);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "الوحده";
-            // 
-            // comboBoxItemUnit
-            // 
-            this.comboBoxItemUnit.FormattingEnabled = true;
-            this.comboBoxItemUnit.Location = new System.Drawing.Point(34, 51);
-            this.comboBoxItemUnit.Name = "comboBoxItemUnit";
-            this.comboBoxItemUnit.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxItemUnit.TabIndex = 17;
-            this.comboBoxItemUnit.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemUnit_SelectedIndexChanged);
-            // 
             // panelSupplier
             // 
             this.panelSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -941,6 +957,110 @@
             this.panelSupplier.Name = "panelSupplier";
             this.panelSupplier.Size = new System.Drawing.Size(36, 469);
             this.panelSupplier.TabIndex = 6;
+            // 
+            // textBoxSuplier_phone
+            // 
+            this.textBoxSuplier_phone.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_phone.Location = new System.Drawing.Point(60, 48);
+            this.textBoxSuplier_phone.Multiline = true;
+            this.textBoxSuplier_phone.Name = "textBoxSuplier_phone";
+            this.textBoxSuplier_phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_phone.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_phone.TabIndex = 28;
+            // 
+            // textBoxSuplier_person
+            // 
+            this.textBoxSuplier_person.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_person.Location = new System.Drawing.Point(194, 48);
+            this.textBoxSuplier_person.Multiline = true;
+            this.textBoxSuplier_person.Name = "textBoxSuplier_person";
+            this.textBoxSuplier_person.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_person.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_person.TabIndex = 27;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(337, 241);
+            this.label16.Name = "label16";
+            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label16.Size = new System.Drawing.Size(94, 28);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "الموقع الاكتروني";
+            // 
+            // textBoxSuplier_Web
+            // 
+            this.textBoxSuplier_Web.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Web.Location = new System.Drawing.Point(319, 275);
+            this.textBoxSuplier_Web.Multiline = true;
+            this.textBoxSuplier_Web.Name = "textBoxSuplier_Web";
+            this.textBoxSuplier_Web.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Web.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Web.TabIndex = 25;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(54, 96);
+            this.label13.Name = "label13";
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label13.Size = new System.Drawing.Size(89, 28);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "البريد الاكتروني";
+            // 
+            // textBoxSuplier_Email
+            // 
+            this.textBoxSuplier_Email.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Email.Location = new System.Drawing.Point(19, 127);
+            this.textBoxSuplier_Email.Multiline = true;
+            this.textBoxSuplier_Email.Name = "textBoxSuplier_Email";
+            this.textBoxSuplier_Email.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Email.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Email.TabIndex = 23;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(251, 173);
+            this.label14.Name = "label14";
+            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label14.Size = new System.Drawing.Size(43, 28);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "المدينه";
+            // 
+            // textBoxSuplier_City
+            // 
+            this.textBoxSuplier_City.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_City.Location = new System.Drawing.Point(196, 204);
+            this.textBoxSuplier_City.Multiline = true;
+            this.textBoxSuplier_City.Name = "textBoxSuplier_City";
+            this.textBoxSuplier_City.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_City.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_City.TabIndex = 21;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(367, 172);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label15.Size = new System.Drawing.Size(44, 28);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "العنوان";
+            // 
+            // textBoxSuplier_Address
+            // 
+            this.textBoxSuplier_Address.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSuplier_Address.Location = new System.Drawing.Point(321, 204);
+            this.textBoxSuplier_Address.Multiline = true;
+            this.textBoxSuplier_Address.Name = "textBoxSuplier_Address";
+            this.textBoxSuplier_Address.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSuplier_Address.Size = new System.Drawing.Size(119, 36);
+            this.textBoxSuplier_Address.TabIndex = 19;
             // 
             // label4
             // 
@@ -1036,110 +1156,6 @@
             this.textBoxSuplier_Company.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBoxSuplier_Company.Size = new System.Drawing.Size(119, 36);
             this.textBoxSuplier_Company.TabIndex = 2;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(54, 96);
-            this.label13.Name = "label13";
-            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label13.Size = new System.Drawing.Size(89, 28);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "البريد الاكتروني";
-            // 
-            // textBoxSuplier_Email
-            // 
-            this.textBoxSuplier_Email.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSuplier_Email.Location = new System.Drawing.Point(19, 127);
-            this.textBoxSuplier_Email.Multiline = true;
-            this.textBoxSuplier_Email.Name = "textBoxSuplier_Email";
-            this.textBoxSuplier_Email.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxSuplier_Email.Size = new System.Drawing.Size(119, 36);
-            this.textBoxSuplier_Email.TabIndex = 23;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(251, 173);
-            this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label14.Size = new System.Drawing.Size(43, 28);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "المدينه";
-            // 
-            // textBoxSuplier_City
-            // 
-            this.textBoxSuplier_City.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSuplier_City.Location = new System.Drawing.Point(196, 204);
-            this.textBoxSuplier_City.Multiline = true;
-            this.textBoxSuplier_City.Name = "textBoxSuplier_City";
-            this.textBoxSuplier_City.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxSuplier_City.Size = new System.Drawing.Size(119, 36);
-            this.textBoxSuplier_City.TabIndex = 21;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(367, 172);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label15.Size = new System.Drawing.Size(44, 28);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "العنوان";
-            // 
-            // textBoxSuplier_Address
-            // 
-            this.textBoxSuplier_Address.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSuplier_Address.Location = new System.Drawing.Point(321, 204);
-            this.textBoxSuplier_Address.Multiline = true;
-            this.textBoxSuplier_Address.Name = "textBoxSuplier_Address";
-            this.textBoxSuplier_Address.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxSuplier_Address.Size = new System.Drawing.Size(119, 36);
-            this.textBoxSuplier_Address.TabIndex = 19;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(337, 241);
-            this.label16.Name = "label16";
-            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label16.Size = new System.Drawing.Size(94, 28);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "الموقع الاكتروني";
-            // 
-            // textBoxSuplier_Web
-            // 
-            this.textBoxSuplier_Web.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSuplier_Web.Location = new System.Drawing.Point(319, 275);
-            this.textBoxSuplier_Web.Multiline = true;
-            this.textBoxSuplier_Web.Name = "textBoxSuplier_Web";
-            this.textBoxSuplier_Web.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxSuplier_Web.Size = new System.Drawing.Size(119, 36);
-            this.textBoxSuplier_Web.TabIndex = 25;
-            // 
-            // textBoxSuplier_phone
-            // 
-            this.textBoxSuplier_phone.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSuplier_phone.Location = new System.Drawing.Point(60, 48);
-            this.textBoxSuplier_phone.Multiline = true;
-            this.textBoxSuplier_phone.Name = "textBoxSuplier_phone";
-            this.textBoxSuplier_phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxSuplier_phone.Size = new System.Drawing.Size(119, 36);
-            this.textBoxSuplier_phone.TabIndex = 28;
-            // 
-            // textBoxSuplier_person
-            // 
-            this.textBoxSuplier_person.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSuplier_person.Location = new System.Drawing.Point(194, 48);
-            this.textBoxSuplier_person.Multiline = true;
-            this.textBoxSuplier_person.Name = "textBoxSuplier_person";
-            this.textBoxSuplier_person.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxSuplier_person.Size = new System.Drawing.Size(119, 36);
-            this.textBoxSuplier_person.TabIndex = 27;
             // 
             // panel1
             // 
@@ -1365,8 +1381,34 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(295, 80);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 469);
+            this.panel2.Size = new System.Drawing.Size(73, 469);
             this.panel2.TabIndex = 8;
+            // 
+            // dateTimeInvoice
+            // 
+            this.dateTimeInvoice.Location = new System.Drawing.Point(319, 55);
+            this.dateTimeInvoice.Name = "dateTimeInvoice";
+            this.dateTimeInvoice.Size = new System.Drawing.Size(119, 20);
+            this.dateTimeInvoice.TabIndex = 31;
+            // 
+            // buttonIvoiceRefresh
+            // 
+            this.buttonIvoiceRefresh.Location = new System.Drawing.Point(202, 203);
+            this.buttonIvoiceRefresh.Name = "buttonIvoiceRefresh";
+            this.buttonIvoiceRefresh.Size = new System.Drawing.Size(75, 23);
+            this.buttonIvoiceRefresh.TabIndex = 30;
+            this.buttonIvoiceRefresh.Text = "تحديث";
+            this.buttonIvoiceRefresh.UseVisualStyleBackColor = true;
+            this.buttonIvoiceRefresh.Click += new System.EventHandler(this.buttonIvoiceRefresh_Click);
+            // 
+            // comboBoxInvoiceSupllier
+            // 
+            this.comboBoxInvoiceSupllier.FormattingEnabled = true;
+            this.comboBoxInvoiceSupllier.Location = new System.Drawing.Point(306, 203);
+            this.comboBoxInvoiceSupllier.Name = "comboBoxInvoiceSupllier";
+            this.comboBoxInvoiceSupllier.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxInvoiceSupllier.TabIndex = 29;
+            this.comboBoxInvoiceSupllier.SelectedIndexChanged += new System.EventHandler(this.comboBoxInvoiceSupllier_SelectedIndexChanged);
             // 
             // textBoxinvoiceDiscount
             // 
@@ -1484,37 +1526,177 @@
             this.label32.TabIndex = 3;
             this.label32.Text = "التاريخ";
             // 
-            // comboBoxInvoiceSupllier
+            // panel3
             // 
-            this.comboBoxInvoiceSupllier.FormattingEnabled = true;
-            this.comboBoxInvoiceSupllier.Location = new System.Drawing.Point(306, 203);
-            this.comboBoxInvoiceSupllier.Name = "comboBoxInvoiceSupllier";
-            this.comboBoxInvoiceSupllier.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxInvoiceSupllier.TabIndex = 29;
-            this.comboBoxInvoiceSupllier.SelectedIndexChanged += new System.EventHandler(this.comboBoxInvoiceSupllier_SelectedIndexChanged);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel3.Controls.Add(this.dateTimeReceipt);
+            this.panel3.Controls.Add(this.buttonCustomerRefresh);
+            this.panel3.Controls.Add(this.comboBoxReceipt);
+            this.panel3.Controls.Add(this.textBoxReceiptDiscount);
+            this.panel3.Controls.Add(this.label22);
+            this.panel3.Controls.Add(this.textBoxReceiptID);
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.label33);
+            this.panel3.Controls.Add(this.buttonAddReceipt);
+            this.panel3.Controls.Add(this.label34);
+            this.panel3.Controls.Add(this.textBoxReceiptNote);
+            this.panel3.Controls.Add(this.label35);
+            this.panel3.Controls.Add(this.textBoxReceiptTax);
+            this.panel3.Controls.Add(this.label36);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(368, 80);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(458, 469);
+            this.panel3.TabIndex = 9;
             // 
-            // buttonIvoiceRefresh
+            // dateTimeReceipt
             // 
-            this.buttonIvoiceRefresh.Location = new System.Drawing.Point(202, 203);
-            this.buttonIvoiceRefresh.Name = "buttonIvoiceRefresh";
-            this.buttonIvoiceRefresh.Size = new System.Drawing.Size(75, 23);
-            this.buttonIvoiceRefresh.TabIndex = 30;
-            this.buttonIvoiceRefresh.Text = "تحديث";
-            this.buttonIvoiceRefresh.UseVisualStyleBackColor = true;
-            this.buttonIvoiceRefresh.Click += new System.EventHandler(this.buttonIvoiceRefresh_Click);
+            this.dateTimeReceipt.Location = new System.Drawing.Point(319, 55);
+            this.dateTimeReceipt.Name = "dateTimeReceipt";
+            this.dateTimeReceipt.Size = new System.Drawing.Size(119, 20);
+            this.dateTimeReceipt.TabIndex = 31;
             // 
-            // dateTimeInvoice
+            // buttonCustomerRefresh
             // 
-            this.dateTimeInvoice.Location = new System.Drawing.Point(319, 55);
-            this.dateTimeInvoice.Name = "dateTimeInvoice";
-            this.dateTimeInvoice.Size = new System.Drawing.Size(119, 20);
-            this.dateTimeInvoice.TabIndex = 31;
+            this.buttonCustomerRefresh.Location = new System.Drawing.Point(202, 203);
+            this.buttonCustomerRefresh.Name = "buttonCustomerRefresh";
+            this.buttonCustomerRefresh.Size = new System.Drawing.Size(75, 23);
+            this.buttonCustomerRefresh.TabIndex = 30;
+            this.buttonCustomerRefresh.Text = "تحديث";
+            this.buttonCustomerRefresh.UseVisualStyleBackColor = true;
+            this.buttonCustomerRefresh.Click += new System.EventHandler(this.buttonCustomerRefresh_Click);
+            // 
+            // comboBoxReceipt
+            // 
+            this.comboBoxReceipt.FormattingEnabled = true;
+            this.comboBoxReceipt.Location = new System.Drawing.Point(306, 203);
+            this.comboBoxReceipt.Name = "comboBoxReceipt";
+            this.comboBoxReceipt.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxReceipt.TabIndex = 29;
+            this.comboBoxReceipt.SelectedIndexChanged += new System.EventHandler(this.comboBoxReceipt_SelectedIndexChanged);
+            // 
+            // textBoxReceiptDiscount
+            // 
+            this.textBoxReceiptDiscount.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxReceiptDiscount.Location = new System.Drawing.Point(60, 48);
+            this.textBoxReceiptDiscount.Multiline = true;
+            this.textBoxReceiptDiscount.Name = "textBoxReceiptDiscount";
+            this.textBoxReceiptDiscount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxReceiptDiscount.Size = new System.Drawing.Size(119, 36);
+            this.textBoxReceiptDiscount.TabIndex = 28;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(54, 96);
+            this.label22.Name = "label22";
+            this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label22.Size = new System.Drawing.Size(64, 28);
+            this.label22.TabIndex = 24;
+            this.label22.Text = "رقم الفاتورة";
+            // 
+            // textBoxReceiptID
+            // 
+            this.textBoxReceiptID.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxReceiptID.Location = new System.Drawing.Point(19, 127);
+            this.textBoxReceiptID.Multiline = true;
+            this.textBoxReceiptID.Name = "textBoxReceiptID";
+            this.textBoxReceiptID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxReceiptID.Size = new System.Drawing.Size(119, 36);
+            this.textBoxReceiptID.TabIndex = 23;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(367, 172);
+            this.label27.Name = "label27";
+            this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label27.Size = new System.Drawing.Size(42, 28);
+            this.label27.TabIndex = 20;
+            this.label27.Text = "العميل";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(120, 17);
+            this.label33.Name = "label33";
+            this.label33.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label33.Size = new System.Drawing.Size(45, 28);
+            this.label33.TabIndex = 18;
+            this.label33.Text = "الخصم";
+            // 
+            // buttonAddReceipt
+            // 
+            this.buttonAddReceipt.Location = new System.Drawing.Point(197, 425);
+            this.buttonAddReceipt.Name = "buttonAddReceipt";
+            this.buttonAddReceipt.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddReceipt.TabIndex = 11;
+            this.buttonAddReceipt.Text = "إدخال";
+            this.buttonAddReceipt.UseVisualStyleBackColor = true;
+            this.buttonAddReceipt.Click += new System.EventHandler(this.buttonAddReceipt_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(216, 96);
+            this.label34.Name = "label34";
+            this.label34.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label34.Size = new System.Drawing.Size(60, 28);
+            this.label34.TabIndex = 9;
+            this.label34.Text = "ملاحظات";
+            // 
+            // textBoxReceiptNote
+            // 
+            this.textBoxReceiptNote.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxReceiptNote.Location = new System.Drawing.Point(153, 127);
+            this.textBoxReceiptNote.Multiline = true;
+            this.textBoxReceiptNote.Name = "textBoxReceiptNote";
+            this.textBoxReceiptNote.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxReceiptNote.Size = new System.Drawing.Size(119, 36);
+            this.textBoxReceiptNote.TabIndex = 8;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(374, 96);
+            this.label35.Name = "label35";
+            this.label35.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label35.Size = new System.Drawing.Size(51, 28);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "الضريبة";
+            // 
+            // textBoxReceiptTax
+            // 
+            this.textBoxReceiptTax.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxReceiptTax.Location = new System.Drawing.Point(319, 127);
+            this.textBoxReceiptTax.Multiline = true;
+            this.textBoxReceiptTax.Name = "textBoxReceiptTax";
+            this.textBoxReceiptTax.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxReceiptTax.Size = new System.Drawing.Size(119, 36);
+            this.textBoxReceiptTax.TabIndex = 6;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(389, 13);
+            this.label36.Name = "label36";
+            this.label36.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label36.Size = new System.Drawing.Size(43, 28);
+            this.label36.TabIndex = 3;
+            this.label36.Text = "التاريخ";
             // 
             // manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 549);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSupplier);
@@ -1548,9 +1730,9 @@
             this.panelSection.ResumeLayout(false);
             this.panelSection.PerformLayout();
             this.panelEmployee.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.empDataGrid)).EndInit();
             this.panelItem.ResumeLayout(false);
             this.panelItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.empDataGrid)).EndInit();
             this.panel_catagory.ResumeLayout(false);
             this.panelcatgoryTop.ResumeLayout(false);
             this.panelcatgoryTop.PerformLayout();
@@ -1567,6 +1749,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1684,5 +1868,20 @@
         private System.Windows.Forms.TextBox textBoxinvoiceTax;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.DateTimePicker dateTimeInvoice;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DateTimePicker dateTimeReceipt;
+        private System.Windows.Forms.Button buttonCustomerRefresh;
+        private System.Windows.Forms.ComboBox comboBoxReceipt;
+        private System.Windows.Forms.TextBox textBoxReceiptDiscount;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBoxReceiptID;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Button buttonAddReceipt;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBoxReceiptNote;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox textBoxReceiptTax;
+        private System.Windows.Forms.Label label36;
     }
 }

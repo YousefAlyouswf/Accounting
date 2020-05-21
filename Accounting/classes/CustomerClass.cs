@@ -62,5 +62,38 @@ namespace Accounting.classes
 
             }
         }
+        //Get All Supplier forInvoice
+        #region
+        string[] tokens = new string[] { };
+        public async void getCustomerForReceipt()
+        {
+
+
+            using (HttpClient client = new HttpClient())
+            {
+
+                using (HttpResponseMessage httpResponse = await client.GetAsync("http://gewscrap.com/allfolder/spare/customer.php?dropbox=true"))
+                {
+
+                    using (HttpContent content = httpResponse.Content)
+                    {
+
+                        string theContent = await content.ReadAsStringAsync();
+                        string founderMinus1 = theContent.Remove(theContent.Length - 1, 1);
+                        tokens = founderMinus1.Split('|');
+                    }
+                }
+            }
+
+
+        }
+        public string[] WildcardFiles()
+        {
+
+
+
+            return tokens;
+        }
+        #endregion
     }
 }

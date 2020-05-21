@@ -24,6 +24,7 @@ namespace Accounting
         SupplierClass supplier = new SupplierClass();
         CustomerClass customer = new CustomerClass();
         InvoiceClass invoice = new InvoiceClass();
+        ReceiptClass receipt = new ReceiptClass();
         string itemCatgory;
         string itemUnit;
         public manager()
@@ -39,6 +40,10 @@ namespace Accounting
 
             dateTimeInvoice.Format = DateTimePickerFormat.Custom;
             dateTimeInvoice.CustomFormat = Application.CurrentCulture.DateTimeFormat.ShortDatePattern;
+
+            dateTimeReceipt.Format = DateTimePickerFormat.Custom;
+            dateTimeReceipt.CustomFormat = Application.CurrentCulture.DateTimeFormat.ShortDatePattern;
+
         }
         //أساسيات صفحة المدير
         #region
@@ -255,6 +260,7 @@ namespace Accounting
 
         //---------------------------------- صفحة فاتورة شراء 
         string suplierFromInvoice;
+        string customerFromReceipt;
         private void buttonIvoiceRefresh_Click(object sender, EventArgs e)
         {
             comboBoxInvoiceSupllier.Items.Clear();
@@ -276,6 +282,29 @@ namespace Accounting
         {
             invoice.addInvoiceAsync(dateTimeInvoice.Value.Date, textBoxinvoiceDiscount.Text, textBoxinvoiceTax.Text,
                 textBoxinvoiceNote.Text,textBoxinvoiceID.Text ,suplierFromInvoice);
+        }
+
+        private void buttonCustomerRefresh_Click(object sender, EventArgs e)
+        {
+            comboBoxReceipt.Items.Clear();
+            customer.getCustomerForReceipt();
+            string[] listCategory = customer.WildcardFiles();
+
+            for (int i = 0; i < listCategory.Length; i++)
+            {
+                comboBoxReceipt.Items.Add(listCategory[i]);
+            }
+        }
+
+        private void buttonAddReceipt_Click(object sender, EventArgs e)
+        {
+            receipt.addReceiptAsync(dateTimeReceipt.Value.Date, textBoxReceiptDiscount.Text, textBoxReceiptTax.Text,
+                            textBoxReceiptNote.Text, textBoxReceiptID.Text, customerFromReceipt);
+        }
+
+        private void comboBoxReceipt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            customerFromReceipt = comboBoxReceipt.Text;
         }
     }
 
