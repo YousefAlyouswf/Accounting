@@ -12,6 +12,7 @@ $city = $_GET['city'];
 $email = $_GET['email'];
 $web = $_GET['web'];
 
+if($company != null){
     $query = mysqli_query($conn, "SELECT * from `suppliers` where companyName='$company'");
 
     if (mysqli_num_rows($query) > 0) {
@@ -21,3 +22,20 @@ $web = $_GET['web'];
 VALUES ('$company','$person','$phone','$mobile','$fax','$address','$city','$email','$web')");
 
     }
+}
+
+
+
+$dropBox=$_GET['dropbox'];
+if($dropBox != null){
+
+    $query = mysqli_query($conn, "SELECT * from `suppliers` ORDER BY companyName");
+
+    while ($result = mysqli_fetch_array($query)) {
+        $companyName = $result['companyName'];
+
+
+        echo $companyName;
+        echo '|';
+    }
+}

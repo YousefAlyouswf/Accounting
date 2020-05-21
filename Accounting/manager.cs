@@ -23,6 +23,7 @@ namespace Accounting
         Unit unit = new Unit();
         SupplierClass supplier = new SupplierClass();
         CustomerClass customer = new CustomerClass();
+        InvoiceClass invoice = new InvoiceClass();
         string itemCatgory;
         string itemUnit;
         public manager()
@@ -36,8 +37,8 @@ namespace Accounting
 
 
 
-            //dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            //dateTimePicker1.CustomFormat = Application.CurrentCulture.DateTimeFormat.ShortDatePattern;
+            dateTimeInvoice.Format = DateTimePickerFormat.Custom;
+            dateTimeInvoice.CustomFormat = Application.CurrentCulture.DateTimeFormat.ShortDatePattern;
         }
         //أساسيات صفحة المدير
         #region
@@ -146,7 +147,7 @@ namespace Accounting
         }
 
         #endregion
-        //---------------------------------- صفحة البضاعه بداية
+        //---------------------------------- صفحة البضاعه 
         #region
         //اظهار صفحة البضاعه
         private void itemButtonClick(object sender, EventArgs e)
@@ -232,7 +233,7 @@ namespace Accounting
             }
         }
         #endregion
-        //---------------------------------- صفحة الموزعين , العملاء بداية
+        //---------------------------------- صفحة الموزعين , العملاء 
         #region
         async private void buttonAddSuplier_Click(object sender, EventArgs e)
         {
@@ -248,8 +249,34 @@ namespace Accounting
                   textBoxCustomerMobile.Text, textBoxCustomerFax.Text, textBoxCustomerAddress.Text, textBoxCustomerCity.Text,
                   textBoxCustomerEmail.Text, textBoxCustomerWeb.Text
                 );
-        } 
+        }
+
         #endregion
+
+        //---------------------------------- صفحة فاتورة شراء 
+        string suplierFromInvoice;
+        private void buttonIvoiceRefresh_Click(object sender, EventArgs e)
+        {
+            comboBoxInvoiceSupllier.Items.Clear();
+            supplier.getSupplierForInvoice();
+            string[] listCategory = supplier.WildcardFiles();
+
+            for (int i = 0; i < listCategory.Length; i++)
+            {
+                comboBoxInvoiceSupllier.Items.Add(listCategory[i]);
+            }
+        }
+
+        private void comboBoxInvoiceSupllier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            suplierFromInvoice = comboBoxInvoiceSupllier.Text;
+        }
+
+        private void buttonAddInvoice_Click(object sender, EventArgs e)
+        {
+            invoice.addInvoiceAsync(dateTimeInvoice.Value.Date, textBoxinvoiceDiscount.Text, textBoxinvoiceTax.Text,
+                textBoxinvoiceNote.Text,textBoxinvoiceID.Text ,suplierFromInvoice);
+        }
     }
 
 }

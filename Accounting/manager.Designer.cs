@@ -129,6 +129,21 @@
             this.textBoxCustomerMobile = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.textBoxCustomerName = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBoxinvoiceDiscount = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBoxinvoiceID = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.buttonAddInvoice = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBoxinvoiceNote = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBoxinvoiceTax = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.comboBoxInvoiceSupllier = new System.Windows.Forms.ComboBox();
+            this.buttonIvoiceRefresh = new System.Windows.Forms.Button();
+            this.dateTimeInvoice = new System.Windows.Forms.DateTimePicker();
             this.panelHeader.SuspendLayout();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -155,6 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Unit)).BeginInit();
             this.panelSupplier.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -1148,7 +1164,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(257, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 469);
+            this.panel1.Size = new System.Drawing.Size(38, 469);
             this.panel1.TabIndex = 7;
             // 
             // textBoxCustomerPhone
@@ -1329,11 +1345,177 @@
             this.textBoxCustomerName.Size = new System.Drawing.Size(119, 36);
             this.textBoxCustomerName.TabIndex = 2;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel2.Controls.Add(this.dateTimeInvoice);
+            this.panel2.Controls.Add(this.buttonIvoiceRefresh);
+            this.panel2.Controls.Add(this.comboBoxInvoiceSupllier);
+            this.panel2.Controls.Add(this.textBoxinvoiceDiscount);
+            this.panel2.Controls.Add(this.label26);
+            this.panel2.Controls.Add(this.textBoxinvoiceID);
+            this.panel2.Controls.Add(this.label28);
+            this.panel2.Controls.Add(this.label29);
+            this.panel2.Controls.Add(this.buttonAddInvoice);
+            this.panel2.Controls.Add(this.label30);
+            this.panel2.Controls.Add(this.textBoxinvoiceNote);
+            this.panel2.Controls.Add(this.label31);
+            this.panel2.Controls.Add(this.textBoxinvoiceTax);
+            this.panel2.Controls.Add(this.label32);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(295, 80);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(450, 469);
+            this.panel2.TabIndex = 8;
+            // 
+            // textBoxinvoiceDiscount
+            // 
+            this.textBoxinvoiceDiscount.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxinvoiceDiscount.Location = new System.Drawing.Point(60, 48);
+            this.textBoxinvoiceDiscount.Multiline = true;
+            this.textBoxinvoiceDiscount.Name = "textBoxinvoiceDiscount";
+            this.textBoxinvoiceDiscount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxinvoiceDiscount.Size = new System.Drawing.Size(119, 36);
+            this.textBoxinvoiceDiscount.TabIndex = 28;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(54, 96);
+            this.label26.Name = "label26";
+            this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label26.Size = new System.Drawing.Size(64, 28);
+            this.label26.TabIndex = 24;
+            this.label26.Text = "رقم الفاتورة";
+            // 
+            // textBoxinvoiceID
+            // 
+            this.textBoxinvoiceID.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxinvoiceID.Location = new System.Drawing.Point(19, 127);
+            this.textBoxinvoiceID.Multiline = true;
+            this.textBoxinvoiceID.Name = "textBoxinvoiceID";
+            this.textBoxinvoiceID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxinvoiceID.Size = new System.Drawing.Size(119, 36);
+            this.textBoxinvoiceID.TabIndex = 23;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(367, 172);
+            this.label28.Name = "label28";
+            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label28.Size = new System.Drawing.Size(42, 28);
+            this.label28.TabIndex = 20;
+            this.label28.Text = "الموزع";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(120, 17);
+            this.label29.Name = "label29";
+            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label29.Size = new System.Drawing.Size(45, 28);
+            this.label29.TabIndex = 18;
+            this.label29.Text = "الخصم";
+            // 
+            // buttonAddInvoice
+            // 
+            this.buttonAddInvoice.Location = new System.Drawing.Point(197, 425);
+            this.buttonAddInvoice.Name = "buttonAddInvoice";
+            this.buttonAddInvoice.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddInvoice.TabIndex = 11;
+            this.buttonAddInvoice.Text = "إدخال";
+            this.buttonAddInvoice.UseVisualStyleBackColor = true;
+            this.buttonAddInvoice.Click += new System.EventHandler(this.buttonAddInvoice_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(216, 96);
+            this.label30.Name = "label30";
+            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label30.Size = new System.Drawing.Size(60, 28);
+            this.label30.TabIndex = 9;
+            this.label30.Text = "ملاحظات";
+            // 
+            // textBoxinvoiceNote
+            // 
+            this.textBoxinvoiceNote.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxinvoiceNote.Location = new System.Drawing.Point(153, 127);
+            this.textBoxinvoiceNote.Multiline = true;
+            this.textBoxinvoiceNote.Name = "textBoxinvoiceNote";
+            this.textBoxinvoiceNote.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxinvoiceNote.Size = new System.Drawing.Size(119, 36);
+            this.textBoxinvoiceNote.TabIndex = 8;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(374, 96);
+            this.label31.Name = "label31";
+            this.label31.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label31.Size = new System.Drawing.Size(51, 28);
+            this.label31.TabIndex = 7;
+            this.label31.Text = "الضريبة";
+            // 
+            // textBoxinvoiceTax
+            // 
+            this.textBoxinvoiceTax.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxinvoiceTax.Location = new System.Drawing.Point(319, 127);
+            this.textBoxinvoiceTax.Multiline = true;
+            this.textBoxinvoiceTax.Name = "textBoxinvoiceTax";
+            this.textBoxinvoiceTax.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxinvoiceTax.Size = new System.Drawing.Size(119, 36);
+            this.textBoxinvoiceTax.TabIndex = 6;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(389, 13);
+            this.label32.Name = "label32";
+            this.label32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label32.Size = new System.Drawing.Size(43, 28);
+            this.label32.TabIndex = 3;
+            this.label32.Text = "التاريخ";
+            // 
+            // comboBoxInvoiceSupllier
+            // 
+            this.comboBoxInvoiceSupllier.FormattingEnabled = true;
+            this.comboBoxInvoiceSupllier.Location = new System.Drawing.Point(306, 203);
+            this.comboBoxInvoiceSupllier.Name = "comboBoxInvoiceSupllier";
+            this.comboBoxInvoiceSupllier.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxInvoiceSupllier.TabIndex = 29;
+            this.comboBoxInvoiceSupllier.SelectedIndexChanged += new System.EventHandler(this.comboBoxInvoiceSupllier_SelectedIndexChanged);
+            // 
+            // buttonIvoiceRefresh
+            // 
+            this.buttonIvoiceRefresh.Location = new System.Drawing.Point(202, 203);
+            this.buttonIvoiceRefresh.Name = "buttonIvoiceRefresh";
+            this.buttonIvoiceRefresh.Size = new System.Drawing.Size(75, 23);
+            this.buttonIvoiceRefresh.TabIndex = 30;
+            this.buttonIvoiceRefresh.Text = "تحديث";
+            this.buttonIvoiceRefresh.UseVisualStyleBackColor = true;
+            this.buttonIvoiceRefresh.Click += new System.EventHandler(this.buttonIvoiceRefresh_Click);
+            // 
+            // dateTimeInvoice
+            // 
+            this.dateTimeInvoice.Location = new System.Drawing.Point(319, 55);
+            this.dateTimeInvoice.Name = "dateTimeInvoice";
+            this.dateTimeInvoice.Size = new System.Drawing.Size(119, 20);
+            this.dateTimeInvoice.TabIndex = 31;
+            // 
             // manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 549);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSupplier);
             this.Controls.Add(this.panelItem);
@@ -1383,6 +1565,8 @@
             this.panelSupplier.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1485,5 +1669,20 @@
         private System.Windows.Forms.TextBox textBoxCustomerMobile;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBoxCustomerName;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button buttonIvoiceRefresh;
+        private System.Windows.Forms.ComboBox comboBoxInvoiceSupllier;
+        private System.Windows.Forms.TextBox textBoxinvoiceDiscount;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBoxinvoiceID;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Button buttonAddInvoice;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textBoxinvoiceNote;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textBoxinvoiceTax;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.DateTimePicker dateTimeInvoice;
     }
 }
