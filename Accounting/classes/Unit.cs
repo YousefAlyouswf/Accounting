@@ -51,7 +51,7 @@ namespace Accounting.classes
         }
         DataTable dt = new DataTable();
         List<UnitModel> categoryList = new List<UnitModel>();
-        public async void getAllUnit(string url)
+        public async Task getAllUnit(string url)
         {
             dt = new DataTable();
             dt.Columns.Add("أسم الوحدة");
@@ -102,7 +102,7 @@ namespace Accounting.classes
             return dt;
         }
         string[] tokens = new string[] { };
-        public async void getUnitForItem()
+        public async Task getUnitForItem()
         {
 
 
@@ -131,5 +131,6 @@ namespace Accounting.classes
 
             return tokens;
         }
+      
     }
 }

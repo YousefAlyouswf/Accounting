@@ -3,16 +3,17 @@ include 'db.php';
 
 
 $unit = $_GET['unit'];
+$valid = $_GET['valid'];
 if($unit != null){
-    $query = mysqli_query($conn, "SELECT * from `unit` where unitName='$unit'");
+    $result = mysqli_query($conn, "INSERT INTO `unit`(`unitName`) VALUES ('$unit')");
+}
+if( $valid != null){
+    $query = mysqli_query($conn, "SELECT * from `unit` where unitName='$valid'");
 
     if (mysqli_num_rows($query) > 0) {
         echo "error";
-    } else {
-        $result = mysqli_query($conn, "INSERT INTO `unit`(`unitName`) VALUES ('$unit')");
     }
 }
-
 
 $auth = $_GET['auth'];
 

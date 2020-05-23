@@ -13,17 +13,18 @@ $email = $_GET['email'];
 $web = $_GET['web'];
 
 if($company != null){
-    $query = mysqli_query($conn, "SELECT * from `suppliers` where companyName='$company'");
+    $result = mysqli_query($conn , "INSERT INTO `suppliers`(`companyName`, `person`, `phone`, `mobile`, `fax`, `address`, `city`, `email`, `site`) 
+VALUES ('$company','$person','$phone','$mobile','$fax','$address','$city','$email','$web')");
+}
+
+$valid=$_GET['valid'];
+if($valid != null){
+    $query = mysqli_query($conn, "SELECT * from `suppliers` where companyName='$valid'");
 
     if (mysqli_num_rows($query) > 0) {
         echo "error";
-    } else {
-        $result = mysqli_query($conn , "INSERT INTO `suppliers`(`companyName`, `person`, `phone`, `mobile`, `fax`, `address`, `city`, `email`, `site`) 
-VALUES ('$company','$person','$phone','$mobile','$fax','$address','$city','$email','$web')");
-
     }
 }
-
 
 
 $dropBox=$_GET['dropbox'];

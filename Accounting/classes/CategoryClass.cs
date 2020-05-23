@@ -13,6 +13,7 @@ namespace Accounting
 {
     class Category
     {
+
         public async Task addCategoryAsync(string textBoxCategory)
         {
             string checkError;
@@ -51,7 +52,7 @@ namespace Accounting
         }
         DataTable dt = new DataTable();
         List<categoryModel> categoryList = new List<categoryModel>();
-        public async void getAllCategroies(string url)
+        public async Task getAllCategroies(string url)
         {
             dt = new DataTable();
             dt.Columns.Add("أسم القسم");
@@ -99,9 +100,9 @@ namespace Accounting
         }
 
         string[] tokens = new string[] { };
-        public async void getCategoryForItem()
+        public async Task getCategoryForItem()
         {
-            
+
 
             using (HttpClient client = new HttpClient())
             {
@@ -128,6 +129,8 @@ namespace Accounting
 
             return tokens;
         }
+
+        
 
     }
 }

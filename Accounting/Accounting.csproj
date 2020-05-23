@@ -66,7 +66,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\Category.cs" />
+    <Compile Include="classes\AddWindow.cs" />
+    <Compile Include="classes\CategoryClass.cs" />
     <Compile Include="classes\CustomerClass.cs" />
     <Compile Include="classes\InvoiceClass.cs" />
     <Compile Include="classes\ReceiptClass.cs" />
@@ -182,6 +183,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

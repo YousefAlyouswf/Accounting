@@ -73,7 +73,7 @@ namespace Accounting.classes
         //Get All Supplier forInvoice
         #region
         string[] tokens = new string[] { };
-        public async void getSupplierForInvoice()
+        public async Task getSupplierForInvoice()
         {
 
 

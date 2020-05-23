@@ -3,17 +3,18 @@ include 'db.php';
 
 
 $category = $_GET['category'];
+$valid = $_GET['valid'];
 if($category != null){
-    $query = mysqli_query($conn, "SELECT * from `category` where categoryName='$category'");
+    $result = mysqli_query($conn, "INSERT INTO `category`(`categoryName`)
+VALUES('$category')");
+}
+if( $valid != null){
+    $query = mysqli_query($conn, "SELECT * from `category` where categoryName='$valid'");
 
     if (mysqli_num_rows($query) > 0) {
         echo "error";
-    } else {
-        $result = mysqli_query($conn, "INSERT INTO `category`(`categoryName`)
-VALUES('$category')");
     }
 }
-
 
 $auth = $_GET['auth'];
 
