@@ -28,8 +28,8 @@ namespace Accounting
         InvoiceClass invoice = new InvoiceClass();
         ReceiptClass receipt = new ReceiptClass();
         AddWindow addWindow = new AddWindow();
-        string itemCatgory;
-        string itemUnit;
+        ItemClass item = new ItemClass();
+       
         #endregion
         public manager()
         {
@@ -361,7 +361,9 @@ namespace Accounting
            
             pageLable.Text = "البضاعة";
             panelEmployee.Hide();
-           
+            item.getAllItem("http://gewscrap.com/allfolder/spare/newitem.php?auth=1");
+            gunaDataGridViewItem.DataSource = item.dataTable();
+
         }
         async private void addItemBtn_Click(object sender, EventArgs e)
         {
@@ -440,6 +442,8 @@ namespace Accounting
             reloadInvoiceBtn.Hide();
             reloadSupplierBtn.Show();
             addSupplierBtn.Show();
+            supplier.getAllSupplier("http://gewscrap.com/allfolder/spare/supplier.php?auth=1");
+            gunaDataGridViewSupplier.DataSource = supplier.dataTable();
 
         }
         async private void addSupplierBtn_Click(object sender, EventArgs e)
@@ -486,6 +490,9 @@ namespace Accounting
             reloadInvoiceBtn.Hide();
             reloadCustomerBtn.Show();
             addCustomerBtn.Show();
+
+            customer.getAllCusomer("http://gewscrap.com/allfolder/spare/customer.php?auth=1");
+            gunaDataGridViewCustomer.DataSource = customer.dataTable();
 
         }
         async private void addCustomerBtn_Click(object sender, EventArgs e)
@@ -538,6 +545,8 @@ namespace Accounting
 
             addReceiptBtn.Hide();
             reloadReceiptBtn.Hide();
+            invoice.getAllInvoice("http://gewscrap.com/allfolder/spare/invoice.php?auth=1");
+            gunaDataGridView1Invoice.DataSource = invoice.dataTable();
         }
         async private void addInvoiceBtn_Click(object sender, EventArgs e)
         {
@@ -604,6 +613,8 @@ namespace Accounting
             reloadSupplierBtn.Hide();
             reloadReceiptBtn.Show();
             addReceiptBtn.Show();
+            receipt.getAllReceipt("http://gewscrap.com/allfolder/spare/receipt.php?auth=1");
+            gunaDataGridViewReceipt.DataSource = receipt.dataTable();
 
         }
 

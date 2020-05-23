@@ -8,7 +8,7 @@ namespace Accounting.models
 {
     class ReceiptModel
     {
-        public DateTime date;
+        public string date;
         public string discount;
         public string tax;
         public string note;
@@ -16,7 +16,7 @@ namespace Accounting.models
         public string customer;
 
         public ReceiptModel(
-            DateTime date,
+            string date,
             string discount,
             string tax,
             string note,
@@ -34,7 +34,7 @@ namespace Accounting.models
 
         }
 
-        public DateTime Date
+        public string Date
         {
             get { return date; }
             set { date = value; }

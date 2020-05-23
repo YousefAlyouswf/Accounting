@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Accounting.models;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -11,6 +13,65 @@ namespace Accounting.classes
 {
     class SupplierClass
     {
+        DataTable dt = new DataTable();
+        List<SuppplierModel> supplierList = new List<SuppplierModel>();
+        public async void getAllSupplier(string url)
+        {
+            dt = new DataTable();
+            dt.Columns.Add("الشركة");
+            dt.Columns.Add("الموزع");
+            dt.Columns.Add("الجوال");
+            dt.Columns.Add("الهاتف");
+            dt.Columns.Add("فاكس");
+            dt.Columns.Add("العنوان");
+            dt.Columns.Add("المدينة");
+            dt.Columns.Add("الإيميل");
+            dt.Columns.Add("ويب");
+            using (HttpClient client = new HttpClient())
+            {
+
+                using (HttpResponseMessage httpResponse = await client.GetAsync(url))
+                {
+
+                    using (HttpContent content = httpResponse.Content)
+                    {
+
+                        string theContent = await content.ReadAsStringAsync();
+                        string founderMinus1 = theContent.Remove(theContent.Length - 1, 1);
+                        string[] tokens = founderMinus1.Split('|');
+
+                        supplierList = new List<SuppplierModel>();
+                        for (int i = 0; i < tokens.Length; i++)
+                        {
+
+
+
+                            string[] comma = tokens[i].Split(',');
+                            supplierList.Add(new SuppplierModel(comma[0], comma[1], comma[3],
+                                comma[2], comma[4], comma[5], comma[6], comma[7], comma[8]));
+
+                        }
+
+
+
+
+
+                        for (int i = 0; i < supplierList.Count; i++)
+                        {
+                            dt.Rows.Add(supplierList[i].CompanyName, supplierList[i].Person, supplierList[i].Mobile,
+                                supplierList[i].Phone, supplierList[i].Fax, supplierList[i].Address,
+                                supplierList[i].City, supplierList[i].Email, supplierList[i].Web);
+                        }
+
+
+                    }
+                }
+            }
+        }
+        public DataTable dataTable()
+        {
+            return dt;
+        }
         //Add Supplier
         #region
         public async Task addSupplyAsync(

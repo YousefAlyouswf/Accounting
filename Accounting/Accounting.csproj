@@ -70,6 +70,7 @@
     <Compile Include="classes\CategoryClass.cs" />
     <Compile Include="classes\CustomerClass.cs" />
     <Compile Include="classes\InvoiceClass.cs" />
+    <Compile Include="classes\ItemClass.cs" />
     <Compile Include="classes\ReceiptClass.cs" />
     <Compile Include="classes\SupplierClass.cs" />
     <Compile Include="classes\Unit.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="models\CostomerModel.cs" />
     <Compile Include="models\employeeModels.cs" />
     <Compile Include="models\InvoiceModel.cs" />
+    <Compile Include="models\ItemModel.cs" />
     <Compile Include="models\ReceiptModel.cs" />
     <Compile Include="models\SuppplierModel.cs" />
     <Compile Include="models\UnitModel.cs" />
